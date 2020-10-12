@@ -14,6 +14,7 @@
 		A4499E2125348D8B00C8A104 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4499E2025348D8B00C8A104 /* Preview Assets.xcassets */; };
 		A4499E2425348D8B00C8A104 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4499E2225348D8B00C8A104 /* LaunchScreen.storyboard */; };
 		A4499E2E25348DD000C8A104 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4499E2D25348DD000C8A104 /* Hike.swift */; };
+		A47585182534948B00470E2F /* HikingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47585172534948B00470E2F /* HikingDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A4499E2325348D8B00C8A104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4499E2525348D8B00C8A104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4499E2D25348DD000C8A104 /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
+		A47585172534948B00470E2F /* HikingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				A4499E1725348D8B00C8A104 /* AppDelegate.swift */,
 				A4499E1925348D8B00C8A104 /* SceneDelegate.swift */,
 				A4499E1B25348D8B00C8A104 /* ContentView.swift */,
+				A47585172534948B00470E2F /* HikingDetail.swift */,
 				A4499E1D25348D8B00C8A104 /* Assets.xcassets */,
 				A4499E2225348D8B00C8A104 /* LaunchScreen.storyboard */,
 				A4499E2525348D8B00C8A104 /* Info.plist */,
@@ -159,6 +162,7 @@
 				A4499E1825348D8B00C8A104 /* AppDelegate.swift in Sources */,
 				A4499E1A25348D8B00C8A104 /* SceneDelegate.swift in Sources */,
 				A4499E2E25348DD000C8A104 /* Hike.swift in Sources */,
+				A47585182534948B00470E2F /* HikingDetail.swift in Sources */,
 				A4499E1C25348D8B00C8A104 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

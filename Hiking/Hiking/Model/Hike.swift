@@ -20,9 +20,9 @@ extension Hike {
     static func all() -> [Hike] {
         
         return [
-            Hike(name: "Hiking1", imageURL: "something1", miles: 6),
-            Hike(name: "Hiking2", imageURL: "something2", miles: 6.8),
-            Hike(name: "Hiking3", imageURL: "something3", miles: 5)
+            Hike(name: "Toronto", imageURL: "toronto", miles: 6),
+            Hike(name: "Toronto Island", imageURL: "toronto_island", miles: 6.8),
+            Hike(name: "CN Tower", imageURL: "cn_tower", miles: 5)
         ]
         
     }
