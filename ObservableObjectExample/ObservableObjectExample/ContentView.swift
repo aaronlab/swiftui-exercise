@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var userSettings = UserSettings()
+    @EnvironmentObject var userSettings: UserSettings
     
     var body: some View {
         VStack {
@@ -20,6 +20,8 @@ struct ContentView: View {
             Button("Increment Score ") {
                 self.userSettings.score += 1
             }
+            
+            FancyScoreView()
         }
     }
 }

@@ -14,6 +14,7 @@
 		A4B3F1AE2538784D00882699 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B3F1AD2538784D00882699 /* Preview Assets.xcassets */; };
 		A4B3F1B12538784D00882699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B3F1AF2538784D00882699 /* LaunchScreen.storyboard */; };
 		A4B3F1BA2538786E00882699 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B3F1B92538786E00882699 /* UserSettings.swift */; };
+		A4B3F1BD2538799D00882699 /* FancyScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B3F1BC2538799D00882699 /* FancyScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A4B3F1B02538784D00882699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4B3F1B22538784D00882699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4B3F1B92538786E00882699 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		A4B3F1BC2538799D00882699 /* FancyScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				A4B3F1A42538784D00882699 /* AppDelegate.swift */,
 				A4B3F1A62538784D00882699 /* SceneDelegate.swift */,
 				A4B3F1A82538784D00882699 /* ContentView.swift */,
+				A4B3F1BC2538799D00882699 /* FancyScoreView.swift */,
 				A4B3F1B92538786E00882699 /* UserSettings.swift */,
 				A4B3F1AA2538784D00882699 /* Assets.xcassets */,
 				A4B3F1AF2538784D00882699 /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 			files = (
 				A4B3F1A52538784D00882699 /* AppDelegate.swift in Sources */,
 				A4B3F1BA2538786E00882699 /* UserSettings.swift in Sources */,
+				A4B3F1BD2538799D00882699 /* FancyScoreView.swift in Sources */,
 				A4B3F1A72538784D00882699 /* SceneDelegate.swift in Sources */,
 				A4B3F1A92538784D00882699 /* ContentView.swift in Sources */,
 			);
