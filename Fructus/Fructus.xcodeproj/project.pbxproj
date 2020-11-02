@@ -20,6 +20,7 @@
 		A4A88B3C254EF52B00530448 /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88B3B254EF52B00530448 /* FruitData.swift */; };
 		A4CE891225503CA200A58279 /* FruitHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE891125503CA200A58279 /* FruitHeaderView.swift */; };
 		A4CE891525503EAA00A58279 /* SourceLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE891425503EAA00A58279 /* SourceLinkView.swift */; };
+		A4CE89182550402300A58279 /* FruitNutrientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE89172550402300A58279 /* FruitNutrientsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		A4A88B3B254EF52B00530448 /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 		A4CE891125503CA200A58279 /* FruitHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitHeaderView.swift; sourceTree = "<group>"; };
 		A4CE891425503EAA00A58279 /* SourceLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLinkView.swift; sourceTree = "<group>"; };
+		A4CE89172550402300A58279 /* FruitNutrientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrientsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				A42E57D6255035D00063667B /* FruitRowView.swift */,
 				A4CE891125503CA200A58279 /* FruitHeaderView.swift */,
 				A4CE891425503EAA00A58279 /* SourceLinkView.swift */,
+				A4CE89172550402300A58279 /* FruitNutrientsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				A405940F254ECF69001D221A /* ContentView.swift in Sources */,
 				A4CE891225503CA200A58279 /* FruitHeaderView.swift in Sources */,
 				A4059429254ED718001D221A /* OnboardingView.swift in Sources */,
+				A4CE89182550402300A58279 /* FruitNutrientsView.swift in Sources */,
 				A4A88B36254EF44300530448 /* FruitModel.swift in Sources */,
 				A405940D254ECF69001D221A /* FructusApp.swift in Sources */,
 			);
