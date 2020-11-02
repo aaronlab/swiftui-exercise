@@ -8,21 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @AppStorage("isOnboarding") var isOnboarding: Bool?
-    
+    // MARK: - PROPERTIES
+
+    var fruits: [Fruit] = fruitsData
+
+    // MARK: - BODY
+
     var body: some View {
-        Button(action: {
-            isOnboarding = true
-        }, label: {
-            Text("isOnboarding = true")
-                .foregroundColor(.blue)
-        })
+        NavigationView {
+            List {
+                ForEach(fruits.shuffled()) { item in
+                    FruitRowView(fruit: item)
+                        .padding(.vertical, 4)
+                }
+            } //: LIST
+            .navigationTitle("Fruits")
+        } //: NAVIGATION
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(fruits: fruitsData)
+            .previewDevice("iPhone 11 Pro")
     }
 }

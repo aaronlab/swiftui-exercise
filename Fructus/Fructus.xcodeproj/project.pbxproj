@@ -14,6 +14,7 @@
 		A4059422254ED18B001D221A /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4059421254ED18B001D221A /* FruitCardView.swift */; };
 		A4059426254ED501001D221A /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4059425254ED501001D221A /* StartButtonView.swift */; };
 		A4059429254ED718001D221A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4059428254ED718001D221A /* OnboardingView.swift */; };
+		A42E57D7255035D00063667B /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E57D6255035D00063667B /* FruitRowView.swift */; };
 		A4A88B36254EF44300530448 /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88B35254EF44300530448 /* FruitModel.swift */; };
 		A4A88B3C254EF52B00530448 /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88B3B254EF52B00530448 /* FruitData.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		A4059421254ED18B001D221A /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
 		A4059425254ED501001D221A /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
 		A4059428254ED718001D221A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A42E57D6255035D00063667B /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
 		A4A88B35254EF44300530448 /* FruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
 		A4A88B3B254EF52B00530448 /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +97,7 @@
 			children = (
 				A4059421254ED18B001D221A /* FruitCardView.swift */,
 				A4059425254ED501001D221A /* StartButtonView.swift */,
+				A42E57D6255035D00063667B /* FruitRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			files = (
 				A4A88B3C254EF52B00530448 /* FruitData.swift in Sources */,
 				A4059422254ED18B001D221A /* FruitCardView.swift in Sources */,
+				A42E57D7255035D00063667B /* FruitRowView.swift in Sources */,
 				A4059426254ED501001D221A /* StartButtonView.swift in Sources */,
 				A405940F254ECF69001D221A /* ContentView.swift in Sources */,
 				A4059429254ED718001D221A /* OnboardingView.swift in Sources */,
