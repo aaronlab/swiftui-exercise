@@ -11,6 +11,7 @@
 		A440014C2551793A00E5585B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440014B2551793A00E5585B /* ContentView.swift */; };
 		A440014E2551793B00E5585B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A440014D2551793B00E5585B /* Assets.xcassets */; };
 		A44001512551793B00E5585B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44001502551793B00E5585B /* Preview Assets.xcassets */; };
+		A440015A25517A4C00E5585B /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440015925517A4C00E5585B /* BottomSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		A440014D2551793B00E5585B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A44001502551793B00E5585B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A44001522551793B00E5585B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A440015925517A4C00E5585B /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				A44001492551793A00E5585B /* PartialSheetApp.swift */,
 				A440014B2551793A00E5585B /* ContentView.swift */,
+				A440015925517A4C00E5585B /* BottomSheet.swift */,
 				A440014D2551793B00E5585B /* Assets.xcassets */,
 				A44001522551793B00E5585B /* Info.plist */,
 				A440014F2551793B00E5585B /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A440014C2551793A00E5585B /* ContentView.swift in Sources */,
+				A440015A25517A4C00E5585B /* BottomSheet.swift in Sources */,
 				A440014A2551793A00E5585B /* PartialSheetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
