@@ -11,7 +11,6 @@
 		A4F4C8D5255421A800C6ABD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F4C8D4255421A800C6ABD1 /* ContentView.swift */; };
 		A4F4C8D7255421A900C6ABD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F4C8D6255421A900C6ABD1 /* Assets.xcassets */; };
 		A4F4C8DA255421A900C6ABD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F4C8D9255421A900C6ABD1 /* Preview Assets.xcassets */; };
-		A4F4C8E3255421BF00C6ABD1 /* MenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F4C8E2255421BF00C6ABD1 /* MenuOptions.swift */; };
 		A4F4C8E6255422BE00C6ABD1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F4C8E5255422BE00C6ABD1 /* ViewModel.swift */; };
 		A4F4C8E92554233900C6ABD1 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F4C8E82554233900C6ABD1 /* MenuCell.swift */; };
 /* End PBXBuildFile section */
@@ -23,7 +22,6 @@
 		A4F4C8D6255421A900C6ABD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4F4C8D9255421A900C6ABD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4F4C8DB255421A900C6ABD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4F4C8E2255421BF00C6ABD1 /* MenuOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptions.swift; sourceTree = "<group>"; };
 		A4F4C8E5255422BE00C6ABD1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A4F4C8E82554233900C6ABD1 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +60,6 @@
 				A4F4C8D4255421A800C6ABD1 /* ContentView.swift */,
 				A4F4C8E82554233900C6ABD1 /* MenuCell.swift */,
 				A4F4C8E5255422BE00C6ABD1 /* ViewModel.swift */,
-				A4F4C8E2255421BF00C6ABD1 /* MenuOptions.swift */,
 				A4F4C8D6255421A900C6ABD1 /* Assets.xcassets */,
 				A4F4C8DB255421A900C6ABD1 /* Info.plist */,
 				A4F4C8D8255421A900C6ABD1 /* Preview Content */,
@@ -151,7 +148,6 @@
 				A4F4C8E92554233900C6ABD1 /* MenuCell.swift in Sources */,
 				A4F4C8D3255421A800C6ABD1 /* SelectButtonsApp.swift in Sources */,
 				A4F4C8E6255422BE00C6ABD1 /* ViewModel.swift in Sources */,
-				A4F4C8E3255421BF00C6ABD1 /* MenuOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

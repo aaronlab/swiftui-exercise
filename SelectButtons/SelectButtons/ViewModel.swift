@@ -9,6 +9,11 @@ import Foundation
 
 final class ViewModel: ObservableObject {
     
-    @Published var menuOptions = MenuOptions.placeholders()
+    var options = ["S", "M", "L", "XL", "2XL"]
+    @Published var selectedOptions = ""
+    
+    init() {
+        self.selectedOptions = options[0]
+    }
     
 }
