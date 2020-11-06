@@ -11,6 +11,8 @@
 		A4CEEE2C2555890400F5F5F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CEEE2B2555890400F5F5F0 /* ContentView.swift */; };
 		A4CEEE2E2555890500F5F5F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CEEE2D2555890500F5F5F0 /* Assets.xcassets */; };
 		A4CEEE312555890500F5F5F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CEEE302555890500F5F5F0 /* Preview Assets.xcassets */; };
+		A4CEEE3A25558AF200F5F5F0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CEEE3925558AF200F5F5F0 /* MainView.swift */; };
+		A4CEEE3D25558B8200F5F5F0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CEEE3C25558B8200F5F5F0 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		A4CEEE2D2555890500F5F5F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4CEEE302555890500F5F5F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4CEEE322555890500F5F5F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4CEEE3925558AF200F5F5F0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A4CEEE3C25558B8200F5F5F0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				A4CEEE292555890400F5F5F0 /* SliderMenuAppApp.swift */,
 				A4CEEE2B2555890400F5F5F0 /* ContentView.swift */,
+				A4CEEE3925558AF200F5F5F0 /* MainView.swift */,
+				A4CEEE3C25558B8200F5F5F0 /* MenuView.swift */,
 				A4CEEE2D2555890500F5F5F0 /* Assets.xcassets */,
 				A4CEEE322555890500F5F5F0 /* Info.plist */,
 				A4CEEE2F2555890500F5F5F0 /* Preview Content */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4CEEE2C2555890400F5F5F0 /* ContentView.swift in Sources */,
+				A4CEEE3D25558B8200F5F5F0 /* MenuView.swift in Sources */,
+				A4CEEE3A25558AF200F5F5F0 /* MainView.swift in Sources */,
 				A4CEEE2A2555890400F5F5F0 /* SliderMenuAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
