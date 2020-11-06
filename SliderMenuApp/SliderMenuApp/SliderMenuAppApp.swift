@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct SliderMenuAppApp: App {
+    
+    init() {
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

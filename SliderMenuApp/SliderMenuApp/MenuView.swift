@@ -10,42 +10,66 @@ import SwiftUI
 struct MenuView: View {
     // MARK: - PROPERTIES
     
+    @State private var showAlert = false
+    
     // MARK: - BODY
     
     var body: some View {
         
         VStack(alignment: .leading) {
             
-            // PROFILE
+            // OPPORTUNITIES
             HStack {
-                Image(systemName: "person")
-                    .foregroundColor(.gray)
+                Image(systemName: "globe")
+                    .foregroundColor(.white)
                     .imageScale(.large)
                 
-                Text("Profile")
-                    .foregroundColor(.gray)
+                Text("OPPORTUNITIES")
+                    .foregroundColor(.white)
                     .font(.headline)
             } //: HSTACK
             .padding(.top, 100)
             
-            // MESSAGE
+            // PROFILE
             HStack {
-                Image(systemName: "envelope")
-                    .foregroundColor(.gray)
+                Image(systemName: "person.circle")
+                    .foregroundColor(.white)
                     .imageScale(.large)
-                Text("Messages")
-                    .foregroundColor(.gray)
+                Text("PROFILE")
+                    .foregroundColor(.white)
+                    .font(.headline)
+            } //: HSTACK
+            .padding(.top, 30)
+            
+            // SAVED
+            HStack {
+                Image(systemName: "bookmark")
+                    .foregroundColor(.white)
+                    .imageScale(.large)
+                Text("SAVED")
+                    .foregroundColor(.white)
                     .font(.headline)
             } //: HSTACK
             .padding(.top, 30)
             
             // SETTINGS
             HStack {
-                Image(systemName: "gear")
-                    .foregroundColor(.gray)
+                Image(systemName: "gearshape")
+                    .foregroundColor(.white)
                     .imageScale(.large)
-                Text("Settings")
-                    .foregroundColor(.gray)
+                Text("SETTINGS")
+                    .foregroundColor(.white)
+                    .font(.headline)
+            } //: HSTACK
+            .padding(.top, 30)
+            
+            // ABOUT
+            HStack {
+                Image(systemName: "info.circle")
+                    .foregroundColor(.white)
+                    .imageScale(.large)
+                Text("ABOUT")
+                    .foregroundColor(.white)
                     .font(.headline)
             } //: HSTACK
             .padding(.top, 30)
@@ -55,7 +79,7 @@ struct MenuView: View {
         } //: VSTACK
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(red: 32/255, green: 23/255, blue: 23/255))
+        .background(Color.black)
         .edgesIgnoringSafeArea(.all)
         
     }

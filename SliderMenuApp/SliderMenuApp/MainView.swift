@@ -20,7 +20,7 @@ struct MainView: View {
                 showMenu = true
             }
         }, label: {
-            Text("Show Menu")
+            Text("Show Side Menu")
         })
         
     }
