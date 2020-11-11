@@ -1,15 +1,16 @@
 //
 //  ContentView.swift
-//  Calculator
+//  ModalViews
 //
-//  Created by Aaron Lee on 2020-11-10.
+//  Created by Aaron Lee on 2020-11-11.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HomeView()
+        Text("Hello, world!")
+            .padding()
     }
 }
 
