@@ -6,11 +6,30 @@
 //
 
 import SwiftUI
+import PartialSheet
 
 struct ContentView: View {
+    @EnvironmentObject var partialSheetManager: PartialSheetManager
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        GeometryReader { geometry in
+            
+            VStack(spacing: 0) {
+                Text("Text")
+                
+                Button(action: {
+                    self.partialSheetManager.showPartialSheet {
+                        BottomSheet()
+                    }
+                }) {
+                    Text("Show Bottom Sheet")
+                }
+                
+                Spacer()
+            }
+            
+        } //: GEOMETRY
+        
     }
 }
 

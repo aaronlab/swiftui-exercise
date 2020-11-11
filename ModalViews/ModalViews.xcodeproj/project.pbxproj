@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		A484E2BD255C0CBD00624E88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A484E2BC255C0CBD00624E88 /* Preview Assets.xcassets */; };
 		A484E2C8255C0CBD00624E88 /* ModalViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A484E2C7255C0CBD00624E88 /* ModalViewsTests.swift */; };
 		A484E2D3255C0CBD00624E88 /* ModalViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A484E2D2255C0CBD00624E88 /* ModalViewsUITests.swift */; };
+		A484E2E5255C0D0200624E88 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = A484E2E4255C0D0200624E88 /* PartialSheet */; };
+		A484E2EA255C0DF500624E88 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A484E2E9255C0DF500624E88 /* BottomSheet.swift */; };
+		A484E2F0255C0E3000624E88 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A484E2EF255C0E3000624E88 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,8 @@
 		A484E2CE255C0CBD00624E88 /* ModalViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModalViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A484E2D2255C0CBD00624E88 /* ModalViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewsUITests.swift; sourceTree = "<group>"; };
 		A484E2D4255C0CBD00624E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A484E2E9255C0DF500624E88 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		A484E2EF255C0E3000624E88 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A484E2E5255C0D0200624E88 /* PartialSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +101,10 @@
 		A484E2B4255C0CBC00624E88 /* ModalViews */ = {
 			isa = PBXGroup;
 			children = (
+				A484E2EE255C0E2700624E88 /* Service */,
 				A484E2B5255C0CBC00624E88 /* ModalViewsApp.swift */,
 				A484E2B7255C0CBC00624E88 /* ContentView.swift */,
+				A484E2E9255C0DF500624E88 /* BottomSheet.swift */,
 				A484E2B9255C0CBD00624E88 /* Assets.xcassets */,
 				A484E2BE255C0CBD00624E88 /* Info.plist */,
 				A484E2BB255C0CBD00624E88 /* Preview Content */,
@@ -130,6 +138,14 @@
 			path = ModalViewsUITests;
 			sourceTree = "<group>";
 		};
+		A484E2EE255C0E2700624E88 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A484E2EF255C0E3000624E88 /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +162,9 @@
 			dependencies = (
 			);
 			name = ModalViews;
+			packageProductDependencies = (
+				A484E2E4255C0D0200624E88 /* PartialSheet */,
+			);
 			productName = ModalViews;
 			productReference = A484E2B2255C0CBC00624E88 /* ModalViews.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +236,9 @@
 				Base,
 			);
 			mainGroup = A484E2A9255C0CBC00624E88;
+			packageReferences = (
+				A484E2E3255C0D0200624E88 /* XCRemoteSwiftPackageReference "PartialSheet" */,
+			);
 			productRefGroup = A484E2B3255C0CBC00624E88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A484E2B8255C0CBC00624E88 /* ContentView.swift in Sources */,
+				A484E2EA255C0DF500624E88 /* BottomSheet.swift in Sources */,
+				A484E2F0255C0E3000624E88 /* APIService.swift in Sources */,
 				A484E2B6255C0CBC00624E88 /* ModalViewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +604,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A484E2E3255C0D0200624E88 /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A484E2E4255C0D0200624E88 /* PartialSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A484E2E3255C0D0200624E88 /* XCRemoteSwiftPackageReference "PartialSheet" */;
+			productName = PartialSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A484E2AA255C0CBC00624E88 /* Project object */;
 }

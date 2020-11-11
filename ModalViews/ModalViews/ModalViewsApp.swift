@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import PartialSheet
 
 @main
 struct ModalViewsApp: App {
+    
+    let sheetManager = PartialSheetManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(sheetManager)
         }
     }
 }
