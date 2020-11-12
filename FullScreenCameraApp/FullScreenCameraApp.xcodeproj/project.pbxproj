@@ -13,6 +13,8 @@
 		A4454201255D56F700BF2A14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4454200255D56F700BF2A14 /* Preview Assets.xcassets */; };
 		A445420C255D56F700BF2A14 /* FullScreenCameraAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A445420B255D56F700BF2A14 /* FullScreenCameraAppTests.swift */; };
 		A4454217255D56F700BF2A14 /* FullScreenCameraAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4454216255D56F700BF2A14 /* FullScreenCameraAppUITests.swift */; };
+		A4454228255D576400BF2A14 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4454227255D576400BF2A14 /* CameraController.swift */; };
+		A445422D255D5A6B00BF2A14 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A445422C255D5A6B00BF2A14 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		A4454212255D56F700BF2A14 /* FullScreenCameraAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FullScreenCameraAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4454216255D56F700BF2A14 /* FullScreenCameraAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCameraAppUITests.swift; sourceTree = "<group>"; };
 		A4454218255D56F700BF2A14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4454227255D576400BF2A14 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		A445422C255D5A6B00BF2A14 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				A44541F9255D56F600BF2A14 /* FullScreenCameraAppApp.swift */,
 				A44541FB255D56F600BF2A14 /* ContentView.swift */,
+				A4454227255D576400BF2A14 /* CameraController.swift */,
+				A445422C255D5A6B00BF2A14 /* CameraViewController.swift */,
 				A44541FD255D56F700BF2A14 /* Assets.xcassets */,
 				A4454202255D56F700BF2A14 /* Info.plist */,
 				A44541FF255D56F700BF2A14 /* Preview Content */,
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4454228255D576400BF2A14 /* CameraController.swift in Sources */,
+				A445422D255D5A6B00BF2A14 /* CameraViewController.swift in Sources */,
 				A44541FC255D56F600BF2A14 /* ContentView.swift in Sources */,
 				A44541FA255D56F600BF2A14 /* FullScreenCameraAppApp.swift in Sources */,
 			);
