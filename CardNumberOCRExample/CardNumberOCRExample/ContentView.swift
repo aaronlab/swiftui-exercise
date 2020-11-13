@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var navigationStatus: NavigationStatus? = NavigationStatus.ready
+    @State var result: CreditCard?
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            
+            ZStack {
+                
+                NavigationLink(destination: ResultView(result: result), tag: NavigationStatus.pop, selection: $navigationStatus) {
+                    EmptyView()
+                }
+                
+                ScannerView(navigationStatus: $navigationStatus, result: $result)
+            } //: ZSTACK
+            .navigationBarHidden(true)
+            
+        } //: NAVIGATION
+        
     }
 }
 

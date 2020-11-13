@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,17 @@
 		A4F90098255EA68300E69803 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F90097255EA68300E69803 /* Preview Assets.xcassets */; };
 		A4F900A3255EA68400E69803 /* CardNumberOCRExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F900A2255EA68400E69803 /* CardNumberOCRExampleTests.swift */; };
 		A4F900AE255EA68400E69803 /* CardNumberOCRExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F900AD255EA68400E69803 /* CardNumberOCRExampleUITests.swift */; };
+		A4F901CC255EAD1200E69803 /* ImageAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F901C6255EAD1100E69803 /* ImageAnalyzer.swift */; };
+		A4F901CD255EAD1200E69803 /* ImageRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F901C7255EAD1100E69803 /* ImageRatio.swift */; };
+		A4F901CE255EAD1200E69803 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F901C8255EAD1100E69803 /* CreditCard.swift */; };
+		A4F901CF255EAD1200E69803 /* CreditCardScannerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F901C9255EAD1100E69803 /* CreditCardScannerError.swift */; };
+		A4F901D0255EAD1200E69803 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F901CA255EAD1200E69803 /* CameraView.swift */; };
+		A4F901D1255EAD1200E69803 /* CreditCardScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F901CB255EAD1200E69803 /* CreditCardScannerViewController.swift */; };
+		A4F901D6255EB14F00E69803 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F901D5255EB14F00E69803 /* ScannerView.swift */; };
+		A4F901DB255EBBE700E69803 /* NavigationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F901DA255EBBE700E69803 /* NavigationStatus.swift */; };
+		A4F901E0255EC01B00E69803 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F901DF255EC01B00E69803 /* ResultView.swift */; };
+		A4F901E9255ECAFC00E69803 /* Reg in Frameworks */ = {isa = PBXBuildFile; productRef = A4F901E8255ECAFC00E69803 /* Reg */; };
+		A4F901EE255ECB9500E69803 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A4F901ED255ECB9500E69803 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +56,16 @@
 		A4F900A9255EA68400E69803 /* CardNumberOCRExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardNumberOCRExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F900AD255EA68400E69803 /* CardNumberOCRExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNumberOCRExampleUITests.swift; sourceTree = "<group>"; };
 		A4F900AF255EA68400E69803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4F901C6255EAD1100E69803 /* ImageAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAnalyzer.swift; sourceTree = "<group>"; };
+		A4F901C7255EAD1100E69803 /* ImageRatio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRatio.swift; sourceTree = "<group>"; };
+		A4F901C8255EAD1100E69803 /* CreditCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		A4F901C9255EAD1100E69803 /* CreditCardScannerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardScannerError.swift; sourceTree = "<group>"; };
+		A4F901CA255EAD1200E69803 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		A4F901CB255EAD1200E69803 /* CreditCardScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardScannerViewController.swift; sourceTree = "<group>"; };
+		A4F901D5255EB14F00E69803 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		A4F901DA255EBBE700E69803 /* NavigationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStatus.swift; sourceTree = "<group>"; };
+		A4F901DF255EC01B00E69803 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		A4F901ED255ECB9500E69803 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F901E9255ECAFC00E69803 /* Reg in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +97,7 @@
 		A4F90084255EA68300E69803 = {
 			isa = PBXGroup;
 			children = (
+				A4F901ED255ECB9500E69803 /* README.md */,
 				A4F9008F255EA68300E69803 /* CardNumberOCRExample */,
 				A4F900A1255EA68400E69803 /* CardNumberOCRExampleTests */,
 				A4F900AC255EA68400E69803 /* CardNumberOCRExampleUITests */,
@@ -95,11 +118,15 @@
 		A4F9008F255EA68300E69803 /* CardNumberOCRExample */ = {
 			isa = PBXGroup;
 			children = (
+				A4F901C5255EACF900E69803 /* CreditCardScanner */,
 				A4F90090255EA68300E69803 /* CardNumberOCRExampleApp.swift */,
 				A4F90092255EA68300E69803 /* ContentView.swift */,
+				A4F901DF255EC01B00E69803 /* ResultView.swift */,
 				A4F90094255EA68300E69803 /* Assets.xcassets */,
 				A4F90099255EA68300E69803 /* Info.plist */,
 				A4F90096255EA68300E69803 /* Preview Content */,
+				A4F901D5255EB14F00E69803 /* ScannerView.swift */,
+				A4F901DA255EBBE700E69803 /* NavigationStatus.swift */,
 			);
 			path = CardNumberOCRExample;
 			sourceTree = "<group>";
@@ -130,6 +157,19 @@
 			path = CardNumberOCRExampleUITests;
 			sourceTree = "<group>";
 		};
+		A4F901C5255EACF900E69803 /* CreditCardScanner */ = {
+			isa = PBXGroup;
+			children = (
+				A4F901CA255EAD1200E69803 /* CameraView.swift */,
+				A4F901C8255EAD1100E69803 /* CreditCard.swift */,
+				A4F901C9255EAD1100E69803 /* CreditCardScannerError.swift */,
+				A4F901CB255EAD1200E69803 /* CreditCardScannerViewController.swift */,
+				A4F901C6255EAD1100E69803 /* ImageAnalyzer.swift */,
+				A4F901C7255EAD1100E69803 /* ImageRatio.swift */,
+			);
+			path = CreditCardScanner;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +186,9 @@
 			dependencies = (
 			);
 			name = CardNumberOCRExample;
+			packageProductDependencies = (
+				A4F901E8255ECAFC00E69803 /* Reg */,
+			);
 			productName = CardNumberOCRExample;
 			productReference = A4F9008D255EA68300E69803 /* CardNumberOCRExample.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +260,9 @@
 				Base,
 			);
 			mainGroup = A4F90084255EA68300E69803;
+			packageReferences = (
+				A4F901E7255ECAFC00E69803 /* XCRemoteSwiftPackageReference "Reg" */,
+			);
 			productRefGroup = A4F9008E255EA68300E69803 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F901EE255ECB9500E69803 /* README.md in Resources */,
 				A4F90098255EA68300E69803 /* Preview Assets.xcassets in Resources */,
 				A4F90095255EA68300E69803 /* Assets.xcassets in Resources */,
 			);
@@ -259,7 +306,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F901D6255EB14F00E69803 /* ScannerView.swift in Sources */,
+				A4F901CF255EAD1200E69803 /* CreditCardScannerError.swift in Sources */,
+				A4F901E0255EC01B00E69803 /* ResultView.swift in Sources */,
+				A4F901D0255EAD1200E69803 /* CameraView.swift in Sources */,
 				A4F90093255EA68300E69803 /* ContentView.swift in Sources */,
+				A4F901CE255EAD1200E69803 /* CreditCard.swift in Sources */,
+				A4F901CD255EAD1200E69803 /* ImageRatio.swift in Sources */,
+				A4F901CC255EAD1200E69803 /* ImageAnalyzer.swift in Sources */,
+				A4F901DB255EBBE700E69803 /* NavigationStatus.swift in Sources */,
+				A4F901D1255EAD1200E69803 /* CreditCardScannerViewController.swift in Sources */,
 				A4F90091255EA68300E69803 /* CardNumberOCRExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +636,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4F901E7255ECAFC00E69803 /* XCRemoteSwiftPackageReference "Reg" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yhkaplan/Reg";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4F901E8255ECAFC00E69803 /* Reg */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4F901E7255ECAFC00E69803 /* XCRemoteSwiftPackageReference "Reg" */;
+			productName = Reg;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A4F90085255EA68300E69803 /* Project object */;
 }
