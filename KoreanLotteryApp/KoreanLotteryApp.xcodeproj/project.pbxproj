@@ -13,6 +13,12 @@
 		A4ABC9F625615E2A006320F6 /* KoreanLotteryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABC9F525615E2A006320F6 /* KoreanLotteryAppTests.swift */; };
 		A4ABCA0125615E2A006320F6 /* KoreanLotteryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABCA0025615E2A006320F6 /* KoreanLotteryAppUITests.swift */; };
 		A4ABCA1625615E7A006320F6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABCA1525615E7A006320F6 /* HomeView.swift */; };
+		A4ABCA2225615EC8006320F6 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABCA2125615EC8006320F6 /* APIService.swift */; };
+		A4ABCA2F25615F24006320F6 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABCA2E25615F24006320F6 /* APIError.swift */; };
+		A4ABCA3425615F45006320F6 /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABCA3325615F45006320F6 /* APISession.swift */; };
+		A4ABCA422561610B006320F6 /* LotteryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABCA412561610B006320F6 /* LotteryService.swift */; };
+		A4ABCA4825616162006320F6 /* LotteryAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABCA4725616162006320F6 /* LotteryAPIResponse.swift */; };
+		A4ABCA5425616334006320F6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABCA5325616334006320F6 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		A4ABCA0025615E2A006320F6 /* KoreanLotteryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanLotteryAppUITests.swift; sourceTree = "<group>"; };
 		A4ABCA0225615E2A006320F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4ABCA1525615E7A006320F6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A4ABCA2125615EC8006320F6 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		A4ABCA2E25615F24006320F6 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		A4ABCA3325615F45006320F6 /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
+		A4ABCA412561610B006320F6 /* LotteryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryService.swift; sourceTree = "<group>"; };
+		A4ABCA4725616162006320F6 /* LotteryAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryAPIResponse.swift; sourceTree = "<group>"; };
+		A4ABCA5325616334006320F6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +109,9 @@
 			children = (
 				A4ABCA1125615E43006320F6 /* App */,
 				A4ABCA1325615E4D006320F6 /* Views */,
-				A4ABCA1425615E54006320F6 /* Services */,
+				A4ABCA5225616321006320F6 /* ViewModels */,
+				A4ABCA462561614D006320F6 /* Models */,
+				A4ABCA1425615E54006320F6 /* Core */,
 				A4ABC9E925615E2A006320F6 /* Preview Content */,
 			);
 			path = KoreanLotteryApp;
@@ -147,11 +161,47 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A4ABCA1425615E54006320F6 /* Services */ = {
+		A4ABCA1425615E54006320F6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A4ABCA2025615EB6006320F6 /* API */,
+				A4ABCA3825616045006320F6 /* LotteryService */,
 			);
-			path = Services;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A4ABCA2025615EB6006320F6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A4ABCA2125615EC8006320F6 /* APIService.swift */,
+				A4ABCA3325615F45006320F6 /* APISession.swift */,
+				A4ABCA2E25615F24006320F6 /* APIError.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A4ABCA3825616045006320F6 /* LotteryService */ = {
+			isa = PBXGroup;
+			children = (
+				A4ABCA412561610B006320F6 /* LotteryService.swift */,
+			);
+			path = LotteryService;
+			sourceTree = "<group>";
+		};
+		A4ABCA462561614D006320F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A4ABCA4725616162006320F6 /* LotteryAPIResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A4ABCA5225616321006320F6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A4ABCA5325616334006320F6 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +334,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4ABCA1625615E7A006320F6 /* HomeView.swift in Sources */,
+				A4ABCA2225615EC8006320F6 /* APIService.swift in Sources */,
 				A4ABC9E425615E28006320F6 /* KoreanLotteryAppApp.swift in Sources */,
+				A4ABCA5425616334006320F6 /* HomeViewModel.swift in Sources */,
+				A4ABCA422561610B006320F6 /* LotteryService.swift in Sources */,
+				A4ABCA2F25615F24006320F6 /* APIError.swift in Sources */,
+				A4ABCA4825616162006320F6 /* LotteryAPIResponse.swift in Sources */,
+				A4ABCA3425615F45006320F6 /* APISession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
