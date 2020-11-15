@@ -19,6 +19,7 @@
 		A4ABCA422561610B006320F6 /* LotteryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABCA412561610B006320F6 /* LotteryService.swift */; };
 		A4ABCA4825616162006320F6 /* LotteryAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABCA4725616162006320F6 /* LotteryAPIResponse.swift */; };
 		A4ABCA5425616334006320F6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABCA5325616334006320F6 /* HomeViewModel.swift */; };
+		A4E6257B25616C4600830619 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E6257A25616C4600830619 /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		A4ABCA412561610B006320F6 /* LotteryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryService.swift; sourceTree = "<group>"; };
 		A4ABCA4725616162006320F6 /* LotteryAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryAPIResponse.swift; sourceTree = "<group>"; };
 		A4ABCA5325616334006320F6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A4E6257A25616C4600830619 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				A4ABCA2025615EB6006320F6 /* API */,
 				A4ABCA3825616045006320F6 /* LotteryService */,
+				A4E6257925616C3300830619 /* Extensions */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -202,6 +205,14 @@
 				A4ABCA5325616334006320F6 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A4E6257925616C3300830619 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4E6257A25616C4600830619 /* View+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +351,7 @@
 				A4ABCA422561610B006320F6 /* LotteryService.swift in Sources */,
 				A4ABCA2F25615F24006320F6 /* APIError.swift in Sources */,
 				A4ABCA4825616162006320F6 /* LotteryAPIResponse.swift in Sources */,
+				A4E6257B25616C4600830619 /* View+Extension.swift in Sources */,
 				A4ABCA3425615F45006320F6 /* APISession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
