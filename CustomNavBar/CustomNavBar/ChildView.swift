@@ -13,14 +13,46 @@ struct ChildView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @GestureState private var dragOffset = CGSize.zero
     
+    @State var navBarColor: UIColor = .orange
+    
     // MARK: - BODY
     
     var body: some View {
         
-        VStack {
+        VStack(spacing: 16) {
             Spacer()
             
             Text("Child View")
+            
+            Button(action: {
+                navBarColor = .orange
+            }, label: {
+                Text("Orange")
+            })
+            
+            Button(action: {
+                navBarColor = .black
+            }, label: {
+                Text("Black")
+            })
+            
+            Button(action: {
+                navBarColor = .red
+            }, label: {
+                Text("Red")
+            })
+            
+            Button(action: {
+                navBarColor = .green
+            }, label: {
+                Text("Green")
+            })
+            
+            Button(action: {
+                navBarColor = .blue
+            }, label: {
+                Text("Blue")
+            })
             
             Spacer()
         } //: VSTACK
@@ -31,7 +63,7 @@ struct ChildView: View {
         .edgesIgnoringSafeArea(.bottom)
         
         // NAVIGATION BAR SETUP
-        .navBarColor(.orange)
+        .navBarColor(navBarColor)
         .navigationBarTitle("Child View", displayMode: .inline)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(
