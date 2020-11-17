@@ -15,6 +15,11 @@ struct ChildView: View {
     
     @State var navBarColor: UIColor = .orange
     
+    var infiniteAnimation: Animation {
+        Animation.linear(duration: 2.0)
+            .repeatForever()
+    }
+    
     // MARK: - BODY
     
     var body: some View {
@@ -23,36 +28,6 @@ struct ChildView: View {
             Spacer()
             
             Text("Child View")
-            
-            Button(action: {
-                navBarColor = .orange
-            }, label: {
-                Text("Orange")
-            })
-            
-            Button(action: {
-                navBarColor = .black
-            }, label: {
-                Text("Black")
-            })
-            
-            Button(action: {
-                navBarColor = .red
-            }, label: {
-                Text("Red")
-            })
-            
-            Button(action: {
-                navBarColor = .green
-            }, label: {
-                Text("Green")
-            })
-            
-            Button(action: {
-                navBarColor = .blue
-            }, label: {
-                Text("Blue")
-            })
             
             Spacer()
         } //: VSTACK
@@ -87,6 +62,15 @@ struct ChildView: View {
                         }
                     )
         ) //: DISMISS GESTURE
+        .onAppear {
+            withAnimation(infiniteAnimation) {
+                self.navBarColor = .orange
+                self.navBarColor = .black
+                self.navBarColor = .red
+                self.navBarColor = .green
+                self.navBarColor = .blue
+            }
+        }
         
     }
 }
