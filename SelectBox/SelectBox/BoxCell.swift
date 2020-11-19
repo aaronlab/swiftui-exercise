@@ -10,7 +10,8 @@ import SwiftUI
 struct BoxCell: View {
     // MARK: - PROPERTIES
     
-    @Binding var isSelected: Bool
+    var isSelected: Bool
+    let title: String
     
     // MARK: - BODY
     
@@ -31,12 +32,13 @@ struct BoxCell: View {
                         .frame(width: 6, height: 6, alignment: .center)
                 }
             } //: RADIO
+            
+            Text(title)
+                .foregroundColor(isSelected ? .black : .gray)
+            
+            Spacer()
         } //: HSTACK
-    }
-}
-
-struct BoxCell_Previews: PreviewProvider {
-    static var previews: some View {
-        BoxCell(isSelected: .constant(true))
+        .contentShape(Rectangle())
+        
     }
 }
