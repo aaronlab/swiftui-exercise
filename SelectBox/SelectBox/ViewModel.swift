@@ -6,15 +6,12 @@
 //
 
 import Foundation
-import Combine
 
 final class ViewModel: ObservableObject {
     // MARK: - PROPERTIES
     
     var options: [Option]?
     @Published var selectedOption: Option?
-    
-    private var cancellables = Set<AnyCancellable>()
     
     // MARK: - METHODS
     
