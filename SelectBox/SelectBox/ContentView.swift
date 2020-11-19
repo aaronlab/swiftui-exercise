@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    // MARK: - PROPERTIES
     
     @ObservedObject private var viewModel: ViewModel = ViewModel()
+    
     @State private var alertIsShowing: Bool = false
+    
+    // MARK: - BODY
     
     var body: some View {
         
@@ -26,14 +30,12 @@ struct ContentView: View {
                             BoxCell(isSelected: option.title == viewModel.selectedOption?.title, title: option.title)
                                 .padding(16)
                                 .onTapGesture {
-                                    withAnimation {
+                                    withAnimation(.easeInOut(duration: 0.2)) {
                                         self.alertIsShowing.toggle()
-                                    }
-                                    
-                                    withAnimation(.easeInOut(duration: 0.3)) {
                                         viewModel.selectedOption = option
                                     }
                                 }
+                            
                             Divider()
                         }
                         
