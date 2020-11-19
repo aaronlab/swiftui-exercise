@@ -14,6 +14,9 @@
 		A41B81A22566A27A003260E3 /* SelectBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B81A12566A27A003260E3 /* SelectBoxTests.swift */; };
 		A41B81AD2566A27A003260E3 /* SelectBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B81AC2566A27A003260E3 /* SelectBoxUITests.swift */; };
 		A41B81BE2566A291003260E3 /* BoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B81BD2566A291003260E3 /* BoxCell.swift */; };
+		A41B81C32566A46B003260E3 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B81C22566A46B003260E3 /* Option.swift */; };
+		A41B81C82566A4B6003260E3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B81C72566A4B6003260E3 /* ViewModel.swift */; };
+		A41B81CD2566A912003260E3 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B81CC2566A912003260E3 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		A41B81AC2566A27A003260E3 /* SelectBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBoxUITests.swift; sourceTree = "<group>"; };
 		A41B81AE2566A27A003260E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A41B81BD2566A291003260E3 /* BoxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCell.swift; sourceTree = "<group>"; };
+		A41B81C22566A46B003260E3 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		A41B81C72566A4B6003260E3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A41B81CC2566A912003260E3 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,10 @@
 			children = (
 				A41B818F2566A279003260E3 /* SelectBoxApp.swift */,
 				A41B81912566A279003260E3 /* ContentView.swift */,
+				A41B81C22566A46B003260E3 /* Option.swift */,
+				A41B81C72566A4B6003260E3 /* ViewModel.swift */,
 				A41B81BD2566A291003260E3 /* BoxCell.swift */,
+				A41B81CC2566A912003260E3 /* AlertView.swift */,
 				A41B81932566A27A003260E3 /* Assets.xcassets */,
 				A41B81982566A27A003260E3 /* Info.plist */,
 				A41B81952566A27A003260E3 /* Preview Content */,
@@ -262,9 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41B81C82566A4B6003260E3 /* ViewModel.swift in Sources */,
+				A41B81C32566A46B003260E3 /* Option.swift in Sources */,
 				A41B81BE2566A291003260E3 /* BoxCell.swift in Sources */,
 				A41B81922566A279003260E3 /* ContentView.swift in Sources */,
 				A41B81902566A279003260E3 /* SelectBoxApp.swift in Sources */,
+				A41B81CD2566A912003260E3 /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
