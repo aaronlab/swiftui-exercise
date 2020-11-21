@@ -29,10 +29,14 @@ final class ReminderViewModel {
     
     var remainingDays: Int {
         var nextRemindDayComponents = Calendar.current.dateComponents([.day, .month], from: date)
-        let todayComponent = Calendar.current.dateComponents([.year], from: Date())
+        let todayComponent = Calendar.current.dateComponents([.year, .month, .day], from: Date())
         nextRemindDayComponents.year = todayComponent.year!
         
         var nextRemindDay = Calendar.current.date(from: nextRemindDayComponents)
+        
+        if todayComponent.day == nextRemindDayComponents.day && todayComponent.month == nextRemindDayComponents.month {
+            return 0
+        }
         
         if Date() > nextRemindDay! {
             nextRemindDay = Calendar.current.date(byAdding: .year, value: 1, to: nextRemindDay!)

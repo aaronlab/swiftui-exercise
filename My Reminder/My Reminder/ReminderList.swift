@@ -54,7 +54,7 @@ struct ReminderList: View {
                                 .defaultShadow(radius: 10)
                             
                             NavigationLink(destination:
-                                            Text("Update")
+                                            UpdateView(reminderVM: self.reminderListVM.reminders[index])
                                             .navigationTitle("")
                                             .navigationBarHidden(true)
                             ) {

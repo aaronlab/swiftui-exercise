@@ -9,6 +9,8 @@ import Foundation
 
 final class AddNewViewModel {
     
+    let titleText = "Add a New Reminder"
+    
     func saveReminder(with reminder: ReminderViewModel) {
         DataManager.shared.saveReminder(id: reminder.id, name: reminder.name, date: reminder.date)
     }

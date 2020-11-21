@@ -1,5 +1,5 @@
 //
-//  AddNewView.swift
+//  UpdateView.swift
 //  My Reminder
 //
 //  Created by Aaron Lee on 2020-11-22.
@@ -7,20 +7,27 @@
 
 import SwiftUI
 
-final class AddNewData: ObservableObject {
+final class UpdateData: ObservableObject {
     @Published var name: String = ""
     @Published var date: Date = Date()
+    @Published var id: UUID = UUID()
 }
 
-struct AddNewView: View {
+struct UpdateView: View {
     // MARK: - PROPERTIES
     
-    @Binding var addNewPresented: Bool
-    @ObservedObject private var newData = AddNewData()
-    private let viewModel = AddNewViewModel()
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @ObservedObject var data = UpdateData()
+    private let viewModel = UpdateViewModel()
+    
+    init(reminderVM: ReminderViewModel) {
+        data.id = reminderVM.id
+        data.name = reminderVM.name
+        data.date = reminderVM.date
+    }
     
     // MARK: - BODY
-
+    
     var body: some View {
         ZStack {
             Color.gray.edgesIgnoringSafeArea(.all)
@@ -29,16 +36,13 @@ struct AddNewView: View {
                 
                 HStack {
                     
-                    Text(viewModel.titleText)
+                    Text("Update Reminder")
                         .font(.title)
-                        .bold()
-                        .foregroundColor(.white)
-                    
                     Spacer()
                 } //: HSTACK
-                .padding([.bottom, .leading], 16)
+                .padding([.leading, .bottom], 16)
                 
-                TextField("Enter Name", text: $newData.name)
+                TextField("Enter name", text: $data.name)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(16)
                     .foregroundColor(.black)
@@ -51,7 +55,7 @@ struct AddNewView: View {
                         .frame(maxWidth: .infinity, maxHeight: 40)
                         .background(Rectangle().fill(Color.red))
                     
-                    DatePicker(selection: $newData.date, in: Date()..., displayedComponents: .date) {
+                    DatePicker(selection: $data.date, in: Date()..., displayedComponents: .date) {
                         Text("")
                     } //: PICKER
                     .labelsHidden()
@@ -62,13 +66,13 @@ struct AddNewView: View {
                 .padding(16)
                 
                 HStack(spacing: 30) {
-                    Button(action: { self.addNewPresented.toggle() }) {
+                    Button(action: { self.presentationMode.wrappedValue.dismiss() }) {
                         Text("Cancel")
                             .bold()
                     }.padding()
                     .background(RoundedRectangle(cornerRadius: 10.0).fill(Color.red))
                     
-                    Button(action: { self.addNew() }) {
+                    Button(action: { self.update() }) {
                         Text("Save")
                             .bold()
                     }.padding()
@@ -78,15 +82,16 @@ struct AddNewView: View {
                 .padding(16)
                 .padding(.top, 50)
             } //: VSTACK
-        }
+        } //: ZSTACK
         .onTapGesture {
             DismissKeyboardHelper.dismiss()
         }
     }
     
-    private func addNew() {
-        let reminder = ReminderViewModel(id: UUID(), name: newData.name, date: newData.date)
-        viewModel.saveReminder(with: reminder)
-        self.addNewPresented.toggle()
+    private func update() {
+        let reminder = ReminderViewModel(id: data.id, name: data.name, date: data.date)
+        viewModel.updateReminder(with: reminder)
+        self.presentationMode.wrappedValue.dismiss()
     }
+    
 }
