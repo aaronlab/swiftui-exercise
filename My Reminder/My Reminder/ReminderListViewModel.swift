@@ -5,8 +5,7 @@
 //  Created by Aaron Lee on 2020-11-21.
 //
 
-import SwiftUI
-import Combine
+import Foundation
 
 final class ReminderListViewModel: ObservableObject {
     
