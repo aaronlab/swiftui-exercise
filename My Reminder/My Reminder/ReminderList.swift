@@ -20,6 +20,7 @@ struct ReminderList: View {
         UITableView.appearance().separatorStyle = .none
         UITableView.appearance().backgroundColor = .clear
         UITableViewCell.appearance().selectionStyle = .none
+        UITableViewCell.appearance().backgroundColor = .clear
     }
     
     // MARK: - BODY
@@ -39,7 +40,10 @@ struct ReminderList: View {
                     }.padding([.trailing, .bottom], 20)
                     .sheet(isPresented: $addNewPresented) {
                         // ADD NEW
-                        Text("ADD")
+                        AddNewView(addNewPresented: $addNewPresented)
+                            .onDisappear {
+                                self.reload()
+                            }
                     }
                 } //: ZSTACK
                 List {
@@ -60,6 +64,7 @@ struct ReminderList: View {
                         } //: ZSTACK
                     } //: FOR EACH
                     .onDelete(perform: delete(at:))
+                    .listRowBackground(Color.clear)
                 } //: LIST
                 .onAppear {
                     self.reload()

@@ -21,6 +21,9 @@
 		A48D900E2569589200E1D6BF /* ReminderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D900D2569589200E1D6BF /* ReminderListViewModel.swift */; };
 		A48D9013256959FB00E1D6BF /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D9012256959FB00E1D6BF /* ReminderCell.swift */; };
 		A48D901825695B9900E1D6BF /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D901725695B9900E1D6BF /* View+Extension.swift */; };
+		A48D901D256962C400E1D6BF /* AddNewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D901C256962C400E1D6BF /* AddNewViewModel.swift */; };
+		A48D90222569632600E1D6BF /* AddNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D90212569632600E1D6BF /* AddNewView.swift */; };
+		A48D9027256966AB00E1D6BF /* DismissKeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D9026256966AB00E1D6BF /* DismissKeyboardHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		A48D900D2569589200E1D6BF /* ReminderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewModel.swift; sourceTree = "<group>"; };
 		A48D9012256959FB00E1D6BF /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
 		A48D901725695B9900E1D6BF /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		A48D901C256962C400E1D6BF /* AddNewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewViewModel.swift; sourceTree = "<group>"; };
+		A48D90212569632600E1D6BF /* AddNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewView.swift; sourceTree = "<group>"; };
+		A48D9026256966AB00E1D6BF /* DismissKeyboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				A48D901725695B9900E1D6BF /* View+Extension.swift */,
+				A48D9026256966AB00E1D6BF /* DismissKeyboardHelper.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -182,6 +189,7 @@
 			children = (
 				A48D8FC02569426500E1D6BF /* ReminderList.swift */,
 				A48D9012256959FB00E1D6BF /* ReminderCell.swift */,
+				A48D90212569632600E1D6BF /* AddNewView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -191,6 +199,7 @@
 			children = (
 				A48D900825694B3A00E1D6BF /* ReminderViewModel.swift */,
 				A48D900D2569589200E1D6BF /* ReminderListViewModel.swift */,
+				A48D901C256962C400E1D6BF /* AddNewViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -345,6 +354,9 @@
 				A48D90042569477A00E1D6BF /* DataManager.swift in Sources */,
 				A48D9013256959FB00E1D6BF /* ReminderCell.swift in Sources */,
 				A48D8FBF2569426500E1D6BF /* SceneDelegate.swift in Sources */,
+				A48D90222569632600E1D6BF /* AddNewView.swift in Sources */,
+				A48D901D256962C400E1D6BF /* AddNewViewModel.swift in Sources */,
+				A48D9027256966AB00E1D6BF /* DismissKeyboardHelper.swift in Sources */,
 				A48D8FC12569426500E1D6BF /* ReminderList.swift in Sources */,
 				A48D8FC42569426500E1D6BF /* My_Reminder.xcdatamodeld in Sources */,
 				A48D901825695B9900E1D6BF /* View+Extension.swift in Sources */,

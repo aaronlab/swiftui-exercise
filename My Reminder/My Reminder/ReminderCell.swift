@@ -29,12 +29,11 @@ struct ReminderCell: View {
                     .bold()
                     .frame(height: 40)
             } //: VSTACK
-            .background(RoundedRectangle(cornerRadius: 5).fill(Color.white))
-            .defaultShadow(radius: 5)
+            .background(RoundedRectangle(cornerRadius: 5).fill(Color.white).defaultShadow(radius: 5))
             
             // NAME
             Text(reminderVM.name)
-                .font(.title)
+                .font(.headline)
                 .bold()
                 .foregroundColor(.white)
                 .padding(.leading, 16)
@@ -68,8 +67,7 @@ struct ReminderCell: View {
             } //: VSTACK
         } //: HSTACK
         .padding(16)
-        .background(Color.black.opacity(0.16))
+        .background(Color.black.opacity(0.16).defaultShadow(radius: 10))
         .cornerRadius(10)
-        .defaultShadow(radius: 10)
     }
 }
