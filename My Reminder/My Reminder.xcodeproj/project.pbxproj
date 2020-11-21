@@ -17,6 +17,8 @@
 		A48D8FD72569426600E1D6BF /* My_ReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D8FD62569426600E1D6BF /* My_ReminderTests.swift */; };
 		A48D8FE22569426600E1D6BF /* My_ReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D8FE12569426600E1D6BF /* My_ReminderUITests.swift */; };
 		A48D90042569477A00E1D6BF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D90032569477A00E1D6BF /* DataManager.swift */; };
+		A48D900925694B3A00E1D6BF /* ReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D900825694B3A00E1D6BF /* ReminderViewModel.swift */; };
+		A48D900E2569589200E1D6BF /* ReminderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D900D2569589200E1D6BF /* ReminderListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		A48D8FE12569426600E1D6BF /* My_ReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ReminderUITests.swift; sourceTree = "<group>"; };
 		A48D8FE32569426600E1D6BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A48D90032569477A00E1D6BF /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A48D900825694B3A00E1D6BF /* ReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewModel.swift; sourceTree = "<group>"; };
+		A48D900D2569589200E1D6BF /* ReminderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,8 @@
 		A48D8FFA256942F300E1D6BF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A48D900825694B3A00E1D6BF /* ReminderViewModel.swift */,
+				A48D900D2569589200E1D6BF /* ReminderListViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -328,11 +334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48D900925694B3A00E1D6BF /* ReminderViewModel.swift in Sources */,
 				A48D8FBD2569426500E1D6BF /* AppDelegate.swift in Sources */,
 				A48D90042569477A00E1D6BF /* DataManager.swift in Sources */,
 				A48D8FBF2569426500E1D6BF /* SceneDelegate.swift in Sources */,
 				A48D8FC12569426500E1D6BF /* ReminderList.swift in Sources */,
 				A48D8FC42569426500E1D6BF /* My_Reminder.xcdatamodeld in Sources */,
+				A48D900E2569589200E1D6BF /* ReminderListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
