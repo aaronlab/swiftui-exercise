@@ -13,6 +13,11 @@ struct ContentView: View {
     
     var body: some View {
         CustomTextField(text: $text, isFirstResponder: true, placeholder: "Something")
+            .customForegroundColor(.orange)
+            .customFont(.systemFont(ofSize: 16, weight: .light))
+            .defaultBorder(borderColor: .white)
+            .padding()
+            .frame(width: UIScreen.main.bounds.width, height: 52)
     }
 }
 

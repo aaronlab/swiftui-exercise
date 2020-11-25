@@ -13,8 +13,10 @@ struct CustomTextField: UIViewRepresentable {
     var isFirstResponder: Bool = false
     var placeholder: String = ""
     
+    private let textField = UITextField(frame: .zero)
+    
     func makeUIView(context: Context) -> UITextField {
-        let textField = UITextField(frame: .zero)
+        textField.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         textField.delegate = context.coordinator
         textField.placeholder = placeholder
         return textField
@@ -45,6 +47,20 @@ struct CustomTextField: UIViewRepresentable {
             text = textField.text ?? ""
         }
         
+    }
+    
+}
+
+extension CustomTextField {
+    
+    func customForegroundColor(_ color: UIColor) -> CustomTextField {
+        self.textField.textColor = color
+        return self
+    }
+    
+    func customFont(_ font: UIFont) -> CustomTextField {
+        self.textField.font = font
+        return self
     }
     
 }

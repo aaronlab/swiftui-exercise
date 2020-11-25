@@ -14,6 +14,7 @@
 		A44AEDE1256E63E800F6A790 /* CustomTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44AEDE0256E63E800F6A790 /* CustomTextFieldTests.swift */; };
 		A44AEDEC256E63E800F6A790 /* CustomTextFieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44AEDEB256E63E800F6A790 /* CustomTextFieldUITests.swift */; };
 		A44AEDFD256E644A00F6A790 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44AEDFC256E644A00F6A790 /* CustomTextField.swift */; };
+		A44AEE0A256E6C6700F6A790 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44AEE09256E6C6700F6A790 /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A44AEDEB256E63E800F6A790 /* CustomTextFieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldUITests.swift; sourceTree = "<group>"; };
 		A44AEDED256E63E800F6A790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A44AEDFC256E644A00F6A790 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A44AEE09256E6C6700F6A790 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				A44AEDCE256E63E700F6A790 /* CustomTextFieldApp.swift */,
 				A44AEDD0256E63E700F6A790 /* ContentView.swift */,
 				A44AEDFC256E644A00F6A790 /* CustomTextField.swift */,
+				A44AEE09256E6C6700F6A790 /* View+Extension.swift */,
 				A44AEDD2256E63E800F6A790 /* Assets.xcassets */,
 				A44AEDD7256E63E800F6A790 /* Info.plist */,
 				A44AEDD4256E63E800F6A790 /* Preview Content */,
@@ -264,6 +267,7 @@
 			files = (
 				A44AEDD1256E63E700F6A790 /* ContentView.swift in Sources */,
 				A44AEDCF256E63E700F6A790 /* CustomTextFieldApp.swift in Sources */,
+				A44AEE0A256E6C6700F6A790 /* View+Extension.swift in Sources */,
 				A44AEDFD256E644A00F6A790 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
