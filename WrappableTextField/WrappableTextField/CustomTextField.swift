@@ -31,3 +31,27 @@ struct CustomTextField: UIViewRepresentable {
     }
     
 }
+
+extension CustomTextField {
+    
+    func secureType() -> Self {
+        self.tempView.isSecureTextEntry = true
+        return self
+    }
+    
+    func customKeyboardType(_ type: UIKeyboardType) -> Self {
+        self.tempView.keyboardType = type
+        return self
+    }
+    
+    func customContentType(_ type: UITextContentType) -> Self {
+        self.tempView.textContentType = type
+        return self
+    }
+    
+    func customCapitalization(_ type: UITextAutocapitalizationType) -> Self {
+        self.tempView.autocapitalizationType = type
+        return self
+    }
+    
+}
