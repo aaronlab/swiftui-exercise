@@ -12,6 +12,7 @@
 		A4E0A89B25712C1800AD6237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E0A89A25712C1800AD6237 /* Assets.xcassets */; };
 		A4E0A89E25712C1800AD6237 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E0A89D25712C1800AD6237 /* Preview Assets.xcassets */; };
 		A4E0A8A725712C2800AD6237 /* WrappableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E0A8A625712C2800AD6237 /* WrappableTextField.swift */; };
+		A4E0A8AA25712D3E00AD6237 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E0A8A925712D3E00AD6237 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A4E0A89D25712C1800AD6237 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4E0A89F25712C1800AD6237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E0A8A625712C2800AD6237 /* WrappableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappableTextField.swift; sourceTree = "<group>"; };
+		A4E0A8A925712D3E00AD6237 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				A4E0A89625712C1700AD6237 /* WrappableTextFieldApp.swift */,
 				A4E0A89825712C1700AD6237 /* ContentView.swift */,
 				A4E0A8A625712C2800AD6237 /* WrappableTextField.swift */,
+				A4E0A8A925712D3E00AD6237 /* CustomTextField.swift */,
 				A4E0A89A25712C1800AD6237 /* Assets.xcassets */,
 				A4E0A89F25712C1800AD6237 /* Info.plist */,
 				A4E0A89C25712C1800AD6237 /* Preview Content */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E0A8AA25712D3E00AD6237 /* CustomTextField.swift in Sources */,
 				A4E0A8A725712C2800AD6237 /* WrappableTextField.swift in Sources */,
 				A4E0A89925712C1700AD6237 /* ContentView.swift in Sources */,
 				A4E0A89725712C1700AD6237 /* WrappableTextFieldApp.swift in Sources */,
