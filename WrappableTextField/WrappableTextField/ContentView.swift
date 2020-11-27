@@ -8,9 +8,46 @@
 import SwiftUI
 
 struct ContentView: View {
+    // MARK: - PROPERTIES
+    
+    @State private var userName: String = ""
+    @State private var password: String = ""
+    
+    // MARK: - BODY
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            
+            HStack {
+                Text("User Name: ")
+                Text(userName)
+                Spacer()
+            }
+            
+            HStack {
+                Text("Password: ")
+                Text(password)
+                Spacer()
+            }
+            
+            CustomTextField(tag: 0, placeholder: "User Name") { value in
+                self.userName = value
+            } onCommitted: {
+                print("onCommitted")
+            }
+            .customKeyboardType(.emailAddress)
+            .customContentType(.emailAddress)
+            .customCapitalization(.none)
+            
+            CustomTextField(tag: 1, placeholder: "Password") { value in
+                self.password = value
+            } onCommitted: {
+                print("onCommitted")
+            }
+            .secureType()
+
+            
+        }
     }
 }
 
