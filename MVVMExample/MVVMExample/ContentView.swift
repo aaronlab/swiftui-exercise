@@ -17,6 +17,14 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            
+            if viewModel.premium {
+                Text("PREMIUM")
+                    .foregroundColor(.green)
+                    .frame(height: 100)
+                    .font(.largeTitle)
+            }
+            
             Text("\(viewModel.value)")
                 .font(.largeTitle)
             Button("Increment") {
