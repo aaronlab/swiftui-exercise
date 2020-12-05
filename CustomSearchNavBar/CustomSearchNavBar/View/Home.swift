@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Home: View {
     
-    @State var filteredItems = AppItem.placeholder()
+    @Binding var filteredItems: [AppItem]
     
     var body: some View {
         
@@ -23,6 +23,6 @@ struct Home: View {
                 }
             }
         }
-        .padding(.horizontal)
+        .padding([.horizontal, .top])
     }
 }
