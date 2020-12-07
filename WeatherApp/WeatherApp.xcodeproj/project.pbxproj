@@ -15,6 +15,7 @@
 		A45FCFF3257E6036006D0A35 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45FCFF2257E6036006D0A35 /* Weather.swift */; };
 		A45FCFF8257E6096006D0A35 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45FCFF7257E6096006D0A35 /* WeatherService.swift */; };
 		A45FCFFC257E6305006D0A35 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45FCFFB257E6305006D0A35 /* WeatherViewModel.swift */; };
+		A45FD001257E6723006D0A35 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45FD000257E6723006D0A35 /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A45FCFF2257E6036006D0A35 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		A45FCFF7257E6096006D0A35 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		A45FCFFB257E6305006D0A35 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		A45FD000257E6723006D0A35 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		A45FCFDA257E5F16006D0A35 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				A45FCFFF257E6717006D0A35 /* Extensions */,
 				A45FCFFA257E62F3006D0A35 /* View Models */,
 				A45FCFF0257E6020006D0A35 /* App */,
 				A45FCFF1257E602C006D0A35 /* Models */,
@@ -119,6 +122,14 @@
 				A45FCFFB257E6305006D0A35 /* WeatherViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		A45FCFFF257E6717006D0A35 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A45FD000257E6723006D0A35 /* View+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 				A45FCFF3257E6036006D0A35 /* Weather.swift in Sources */,
 				A45FCFDE257E5F16006D0A35 /* ContentView.swift in Sources */,
 				A45FCFED257E5F70006D0A35 /* APIKey.swift in Sources */,
+				A45FD001257E6723006D0A35 /* View+Extensions.swift in Sources */,
 				A45FCFDC257E5F16006D0A35 /* WeatherAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

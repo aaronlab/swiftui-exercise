@@ -17,31 +17,38 @@ struct ContentView: View {
     }
     
     // MARK: - BODY
-
+    
     var body: some View {
-        VStack(alignment: .center) {
+        ZStack {
             
-            TextField("Enter city name", text: self.$viewModel.cityName, onCommit:  {
-                self.viewModel.search()
-            })
-            .textFieldStyle(RoundedBorderTextFieldStyle())
-            .font(.custom("Arial", size: 40))
-            .padding()
+            Color.orange
+                .edgesIgnoringSafeArea(.all)
+                .onTapGesture {
+                    self.hideKeyboard()
+                }
             
-            HStack {
-                Text(self.viewModel.temperature == "" ? "Please search..." : self.viewModel.temperature)
-                    .foregroundColor(.white)
-                    .font(.custom("Arial", size: 40))
-                    .offset(y: 100)
-                    .padding()
+            VStack(alignment: .center) {
                 
-                Spacer()
-            }
+                TextField("Enter city name", text: self.$viewModel.cityName, onCommit:  {
+                    self.viewModel.search()
+                })
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .font(.custom("Arial", size: 40))
+                .padding()
+                
+                HStack {
+                    Text(self.viewModel.temperature == "" ? "Please search..." : self.viewModel.temperature)
+                        .foregroundColor(.white)
+                        .font(.custom("Arial", size: 40))
+                        .offset(y: 100)
+                        .padding()
+                    
+                    Spacer()
+                }
+                
+            } //: VSTACK
             
-        } //: VSTACK
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-        .background(Color.orange)
-        .edgesIgnoringSafeArea(.all)
+        }
     }
     
 }
