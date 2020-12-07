@@ -91,3 +91,5 @@ iOSInjectionProject/
 
 .DS_Store
 
+WeatherApp/WeatherApp/env/*
+
