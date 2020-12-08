@@ -8,9 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let width = NSScreen.main!.frame.width * 0.6
+    let height = NSScreen.main!.frame.height * 0.6
+    
+    @State private var isPressed = false
+    @State private var disabled = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text(!isPressed ? "Press Me" : "Why did you press?")
+                .font(.system(size: 100, weight: .black, design: .default))
+                .foregroundColor(.white)
+        }
+        .frame(minWidth: width * 0.6, minHeight: height * 0.6)
+        .frame(maxWidth: width, maxHeight: height)
+        .background(Color.black)
+        .onTapGesture {
+            
+            if !disabled {
+                self.disabled.toggle()
+                self.isPressed.toggle()
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    self.isPressed.toggle()
+                }
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                    self.disabled.toggle()
+                }
+                
+            }
+        }
     }
 }
 
