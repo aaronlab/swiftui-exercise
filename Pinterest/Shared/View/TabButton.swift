@@ -40,20 +40,20 @@ struct TabButton: View {
                     
                     Capsule()
                         .fill(Color.clear)
-                        .frame(width: 3, height: 18)
+                        .frame(width: 3, height: 25)
                     
                     if selected == title {
                         
                         Capsule()
                             .fill(Color.black)
-                            .frame(width: 3, height: 18)
+                            .frame(width: 3, height: 25)
                             .matchedGeometryEffect(id: "Tab", in: animation)
                         
                     }
                     
                 }
             }
-            .padding(.horizontal)
+            .padding(.leading)
             
         }
         .buttonStyle(PlainButtonStyle())

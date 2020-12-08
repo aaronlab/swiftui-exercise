@@ -16,7 +16,7 @@ struct Home: View {
     var body: some View {
         HStack {
             
-            HStack {
+            HStack(spacing: 0) {
                 
                 VStack(spacing: 22) {
                     
@@ -34,7 +34,7 @@ struct Home: View {
                         Spacer(minLength: 0)
                     }
                     .padding(.top, 25)
-                    .padding(.leading)
+                    .padding(.leading, 10)
                     
                     
                     TabButton(image: "house.fill", title: "Home", selected: $selected, animation: animation)
@@ -46,6 +46,10 @@ struct Home: View {
                     Spacer(minLength: 0)
                     
                 }
+                
+                Divider()
+                    .offset(x: -2)
+                
             } //: SIDE BAR
             .frame(width: 220)
             
@@ -55,6 +59,7 @@ struct Home: View {
         .frame(width: window!.width / 1.6, height: window!.height - 40)
         .background(Color.white.opacity(0.6))
         .background(BlurWindow())
+        .ignoresSafeArea(.all, edges: .all)
     }
 }
 
