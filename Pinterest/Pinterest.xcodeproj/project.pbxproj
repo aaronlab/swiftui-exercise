@@ -13,6 +13,12 @@
 		A496B7AD257FA57F00933856 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A496B798257FA57E00933856 /* ContentView.swift */; };
 		A496B7AE257FA57F00933856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A496B799257FA57E00933856 /* Assets.xcassets */; };
 		A496B7AF257FA57F00933856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A496B799257FA57E00933856 /* Assets.xcassets */; };
+		A496B7BC257FA75300933856 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A496B7BB257FA75300933856 /* Home.swift */; };
+		A496B7C1257FA77400933856 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A496B7BB257FA75300933856 /* Home.swift */; };
+		A496B7C5257FA7C600933856 /* BlurWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A496B7C4257FA7C600933856 /* BlurWindow.swift */; };
+		A496B7C8257FA7CD00933856 /* BlurWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A496B7C4257FA7C600933856 /* BlurWindow.swift */; };
+		A496B7CC257FA95A00933856 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A496B7CB257FA95A00933856 /* TabButton.swift */; };
+		A496B7CF257FA95D00933856 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A496B7CB257FA95A00933856 /* TabButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,9 @@
 		A496B7A6257FA57F00933856 /* Pinterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A496B7A8257FA57F00933856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A496B7A9257FA57F00933856 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		A496B7BB257FA75300933856 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A496B7C4257FA7C600933856 /* BlurWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurWindow.swift; sourceTree = "<group>"; };
+		A496B7CB257FA95A00933856 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +66,7 @@
 		A496B796257FA57E00933856 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A496B7BA257FA74D00933856 /* View */,
 				A496B797257FA57E00933856 /* PinterestApp.swift */,
 				A496B798257FA57E00933856 /* ContentView.swift */,
 				A496B799257FA57E00933856 /* Assets.xcassets */,
@@ -88,6 +98,16 @@
 				A496B7A9257FA57F00933856 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		A496B7BA257FA74D00933856 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A496B7BB257FA75300933856 /* Home.swift */,
+				A496B7CB257FA95A00933856 /* TabButton.swift */,
+				A496B7C4257FA7C600933856 /* BlurWindow.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A496B7C5257FA7C600933856 /* BlurWindow.swift in Sources */,
 				A496B7AC257FA57F00933856 /* ContentView.swift in Sources */,
+				A496B7BC257FA75300933856 /* Home.swift in Sources */,
+				A496B7CC257FA95A00933856 /* TabButton.swift in Sources */,
 				A496B7AA257FA57F00933856 /* PinterestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A496B7C8257FA7CD00933856 /* BlurWindow.swift in Sources */,
 				A496B7AD257FA57F00933856 /* ContentView.swift in Sources */,
+				A496B7C1257FA77400933856 /* Home.swift in Sources */,
+				A496B7CF257FA95D00933856 /* TabButton.swift in Sources */,
 				A496B7AB257FA57F00933856 /* PinterestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
