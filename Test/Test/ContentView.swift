@@ -17,7 +17,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text(!isPressed ? "Press Me" : "Why did you press?")
+            Text(!isPressed ? "눌려주세요" : "왜 눌려?")
                 .font(.system(size: 100, weight: .black, design: .default))
                 .foregroundColor(.white)
         }
