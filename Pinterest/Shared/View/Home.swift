@@ -10,16 +10,39 @@ import SwiftUI
 struct Home: View {
     
     var window = NSScreen.main?.visibleFrame
-    @State var selected = "Home"
-    @Namespace var animation
     
     var body: some View {
         HStack {
             
-            HStack(spacing: 0) {
+            SideBar()
+            
+            Spacer()
+            
+        }
+        .ignoresSafeArea(.all, edges: .all)
+        .frame(width: window!.width / 1.5, height: window!.height - 40)
+        .background(Color.white.opacity(0.6))
+        .background(BlurWindow())
+    }
+}
+
+struct Home_Previews: PreviewProvider {
+    static var previews: some View {
+        Home()
+    }
+}
+
+struct SideBar: View {
+    
+    @State var selected = "Home"
+    @Namespace var animation
+    
+    var body: some View {
+        HStack(spacing: 0) {
+            
+            VStack(spacing: 22) {
                 
-                VStack(spacing: 22) {
-                    
+                Group {
                     HStack {
                         
                         Image("logo")
@@ -33,7 +56,7 @@ struct Home: View {
                         
                         Spacer(minLength: 0)
                     }
-                    .padding(.top, 25)
+                    .padding(.top, 35)
                     .padding(.leading, 10)
                     
                     
@@ -43,28 +66,89 @@ struct Home: View {
                     
                     TabButton(image: "person.2.fill", title: "Following", selected: $selected, animation: animation)
                     
-                    Spacer(minLength: 0)
+                    HStack {
+                        
+                        Text("Insights")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.gray)
+                        
+                        Spacer()
+                    }
+                    .padding()
                     
+                    TabButton(image: "message.fill", title: "Messages", selected: $selected, animation: animation)
+                    
+                    TabButton(image: "bell.fill", title: "Notifications", selected: $selected, animation: animation)
                 }
                 
-                Divider()
-                    .offset(x: -2)
+                Spacer(minLength: 0)
                 
-            } //: SIDE BAR
-            .frame(width: 220)
+                VStack(spacing: 8) {
+                    
+                    Image("business")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding(.horizontal, 10)
+                    
+                    Button(action: {
+                        
+                    }, label: {
+                        Text("Business Tools")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.blue)
+                    })
+                    .buttonStyle(PlainButtonStyle())
+                    
+                    Text("Hurry! Up Now you can unlock our new business tools at your convenience")
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 10)
+                }
+                
+                Spacer(minLength: 0)
+                
+                // PROFILE
+                
+                HStack(spacing: 10) {
+                    
+                    Image("profile")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 35, height: 35)
+                        .clipShape(Circle())
+                    
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("iJustine")
+                            .font(.caption)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black)
+                        
+                        Text("Last Login 06/12/20")
+                            .font(.caption2)
+                            .foregroundColor(.gray)
+                    }
+                    
+                    Spacer(minLength: 0)
+                    
+                    Image(systemName: "chevron.right")
+                        .foregroundColor(.gray)
+                }
+                .padding(.vertical, 10)
+                .padding(.horizontal, 8)
+                .background(Color.white)
+                .cornerRadius(10)
+                .shadow(color: Color.black.opacity(0.1), radius: 5, x: 5, y: 5)
+                .shadow(color: Color.black.opacity(0.1), radius: 5, x: -5, y: -5)
+                .padding(.horizontal)
+                .padding(.bottom, 20)
+                
+                
+            }
             
-            Spacer()
+            Divider()
+                .offset(x: -2)
             
-        }
-        .frame(width: window!.width / 1.6, height: window!.height - 40)
-        .background(Color.white.opacity(0.6))
-        .background(BlurWindow())
-        .ignoresSafeArea(.all, edges: .all)
-    }
-}
-
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        Home()
+        } //: SIDE BAR
+        .frame(width: 240)
     }
 }
