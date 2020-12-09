@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct Home: View {
     
@@ -65,15 +66,69 @@ struct Home: View {
                     .buttonStyle(PlainButtonStyle())
                 }
                 
-                // Scroll View
-                
-                ScrollView {
+                GeometryReader { geometry in
                     
-                    LazyVGrid(columns: columns) {
-                        ForEach(imageData.images, id: \.id) { data in
-                            Text(data.download_url)
+                    // Scroll View
+                    
+                    ScrollView {
+                        
+                        LazyVGrid(columns: columns, spacing: 15) {
+                            
+                            ForEach(imageData.images.indices, id: \.self) { index in
+                                
+                                ZStack {
+                                    
+                                    WebImage(url: URL(string: imageData.images[index].download_url)!)
+                                        .placeholder(content: {
+                                            ProgressView()
+                                        })
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: (geometry.frame(in: .global).width - 45) / 4, height: 150)
+                                        .cornerRadius(15)
+                                    
+                                    Color.black.opacity(imageData.images[index].onHover ?? false ? 0.2 : 0)
+                                        .cornerRadius(15)
+                                    
+                                    VStack {
+                                        HStack {
+                                            Spacer(minLength: 0)
+                                            
+                                            Button(action: {}, label: {
+                                                Image(systemName: "hand.thumbsup.fill")
+                                                    .foregroundColor(.yellow)
+                                                    .padding(8)
+                                                    .background(Color.white)
+                                                    .cornerRadius(10)
+                                            })
+                                            .buttonStyle(PlainButtonStyle())
+                                            
+                                            Button(action: { saveImage(index: index) }, label: {
+                                                Image(systemName: "folder.fill")
+                                                    .foregroundColor(.blue)
+                                                    .padding(8)
+                                                    .background(Color.white)
+                                                    .cornerRadius(10)
+                                            })
+                                            .buttonStyle(PlainButtonStyle())
+                                            
+                                        }
+                                        .padding(10)
+                                        
+                                        Spacer()
+                                    }
+                                    .opacity(imageData.images[index].onHover ?? false ? 1 : 0)
+                                }
+                                .onHover(perform: { hovering in
+                                    withAnimation {
+                                        imageData.images[index].onHover = hovering
+                                    }
+                                })
+                                
+                            }
+                            // Images
                         }
-                        // Images
+                        .padding(.vertical)
                     }
                 }
                 
@@ -86,6 +141,38 @@ struct Home: View {
         .frame(width: window!.width / 1.5, height: window!.height - 40)
         .background(Color.white.opacity(0.6))
         .background(BlurWindow())
+    }
+    
+    func saveImage(index: Int) {
+        
+        let manager = SDWebImageDownloader(config: .default)
+        manager.downloadImage(with: URL(string: imageData.images[index].download_url)!) { (image, _, _, _) in
+            
+            guard let imageoriginal = image else { return }
+            
+            let data = imageoriginal.sd_imageData(as: .JPEG)
+            
+            let pannel = NSSavePanel()
+            pannel.canCreateDirectories = true
+            pannel.nameFieldStringValue = "\(imageData.images[index].id).jpg"
+            
+            pannel.begin { (response) in
+                
+                if response.rawValue == NSApplication.ModalResponse.OK.rawValue {
+                    
+                    do {
+                        
+                        try data?.write(to: pannel.url!, options: .atomicWrite)
+                        
+                        print("success")
+                    } catch {
+                        print("Handle error: \(error.localizedDescription)")
+                    }
+                }
+                
+            }
+        }
+        
     }
 }
 
