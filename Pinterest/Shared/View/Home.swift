@@ -9,8 +9,12 @@ import SwiftUI
 
 struct Home: View {
     
-    var window = NSScreen.main?.visibleFrame
+    private var window = NSScreen.main?.visibleFrame
     @State private var search = ""
+    
+    private var columns = Array(repeating: GridItem(.flexible(), spacing: 15), count: 4)
+    
+    @StateObject var imageData = ImageViewModel()
     
     var body: some View {
         HStack {
@@ -62,6 +66,16 @@ struct Home: View {
                 }
                 
                 // Scroll View
+                
+                ScrollView {
+                    
+                    LazyVGrid(columns: columns) {
+                        ForEach(imageData.images, id: \.id) { data in
+                            Text(data.download_url)
+                        }
+                        // Images
+                    }
+                }
                 
                 Spacer()
             }

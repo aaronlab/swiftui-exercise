@@ -7,14 +7,28 @@
 
 import SwiftUI
 
-struct ImageViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class ImageViewModel: ObservableObject {
+    
+    @Published var images: [ImageModel] = []
+    
+    init() {
+        let url = "https://picsum.photos/v2/list"
+        
+        let session = URLSession(configuration: .default)
+        
+        session.dataTask(with: URL(string: url)!) { data, _, _ in
+            guard let json = data else { return }
+            
+            do {
+                let images = try JSONDecoder().decode([ImageModel].self, from: json)
+                
+                DispatchQueue.main.async {
+                    self.images = images
+                }
+            } catch {
+                print("Handle error: \(error.localizedDescription)")
+            }
+        }.resume()
     }
-}
-
-struct ImageViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        ImageViewModel()
-    }
+    
 }
