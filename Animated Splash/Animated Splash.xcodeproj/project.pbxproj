@@ -11,9 +11,12 @@
 		A47E6C8525849E740022BAC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E6C8425849E740022BAC3 /* ContentView.swift */; };
 		A47E6C8725849E750022BAC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47E6C8625849E750022BAC3 /* Assets.xcassets */; };
 		A47E6C8A25849E750022BAC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47E6C8925849E750022BAC3 /* Preview Assets.xcassets */; };
+		EEAEC031E0C1A56B695525F0 /* Pods_Animated_Splash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FA5D4394E2BF14261BCF83 /* Pods_Animated_Splash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20E3595934B19FCB0F8AC28E /* Pods-Animated Splash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animated Splash.debug.xcconfig"; path = "Target Support Files/Pods-Animated Splash/Pods-Animated Splash.debug.xcconfig"; sourceTree = "<group>"; };
+		83FA5D4394E2BF14261BCF83 /* Pods_Animated_Splash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animated_Splash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47E6C7F25849E740022BAC3 /* Animated Splash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animated Splash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47E6C8225849E740022BAC3 /* Animated_SplashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animated_SplashApp.swift; sourceTree = "<group>"; };
 		A47E6C8425849E740022BAC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -21,6 +24,7 @@
 		A47E6C8925849E750022BAC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A47E6C8B25849E750022BAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47E6C9225849EAC0022BAC3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DC989ECD5BDCA635FD71F1EE /* Pods-Animated Splash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animated Splash.release.xcconfig"; path = "Target Support Files/Pods-Animated Splash/Pods-Animated Splash.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEAEC031E0C1A56B695525F0 /* Pods_Animated_Splash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 				A47E6C9225849EAC0022BAC3 /* README.md */,
 				A47E6C8125849E740022BAC3 /* Animated Splash */,
 				A47E6C8025849E740022BAC3 /* Products */,
+				C65DE333148C3508E455F01C /* Pods */,
+				C538E33389BA3BF96A7E64F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C538E33389BA3BF96A7E64F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83FA5D4394E2BF14261BCF83 /* Pods_Animated_Splash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C65DE333148C3508E455F01C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20E3595934B19FCB0F8AC28E /* Pods-Animated Splash.debug.xcconfig */,
+				DC989ECD5BDCA635FD71F1EE /* Pods-Animated Splash.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A47E6C8E25849E750022BAC3 /* Build configuration list for PBXNativeTarget "Animated Splash" */;
 			buildPhases = (
+				F93BF213302B32603E6D565F /* [CP] Check Pods Manifest.lock */,
 				A47E6C7B25849E740022BAC3 /* Sources */,
 				A47E6C7C25849E740022BAC3 /* Frameworks */,
 				A47E6C7D25849E740022BAC3 /* Resources */,
+				9D281B54870403EBE539AB9A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D281B54870403EBE539AB9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Animated Splash/Pods-Animated Splash-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Animated Splash/Pods-Animated Splash-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Animated Splash/Pods-Animated Splash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F93BF213302B32603E6D565F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Animated Splash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A47E6C7B25849E740022BAC3 /* Sources */ = {
@@ -266,6 +335,7 @@
 		};
 		A47E6C8F25849E750022BAC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E3595934B19FCB0F8AC28E /* Pods-Animated Splash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -288,6 +358,7 @@
 		};
 		A47E6C9025849E750022BAC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC989ECD5BDCA635FD71F1EE /* Pods-Animated Splash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
