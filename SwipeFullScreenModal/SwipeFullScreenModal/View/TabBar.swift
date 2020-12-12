@@ -10,47 +10,58 @@ import SwiftUI
 struct TabBar: View {
     
     @Namespace var animation
+    @StateObject var detailObject = DetailViewModel()
     
     var body: some View {
         
-        TabView {
+        ZStack {
+            TabView {
+                
+                Today(animation: animation)
+                    .environmentObject(detailObject)
+                    .tabItem {
+                        
+                        Image("today")
+                            .renderingMode(.template)
+                        
+                        Text("Today")
+                    }
+                
+                Text("Games")
+                    .tabItem {
+                        
+                        Image("games")
+                            .renderingMode(.template)
+                        
+                        Text("Games")
+                    }
+                
+                Text("Apps")
+                    .tabItem {
+                        
+                        Image("apps")
+                            .renderingMode(.template)
+                        
+                        Text("Apps")
+                    }
+                
+                Text("Search")
+                    .tabItem {
+                        
+                        Image("search")
+                            .renderingMode(.template)
+                        
+                        Text("Search")
+                    }
+            } //: T
             
-            Today(animation: animation)
-                .tabItem {
-                    
-                    Image("today")
-                        .renderingMode(.template)
-                    
-                    Text("Today")
-                }
+            .opacity(detailObject.show ? 0 : 1)
             
-            Text("Games")
-                .tabItem {
-                    
-                    Image("games")
-                        .renderingMode(.template)
-                    
-                    Text("Games")
-                }
-            
-            Text("Apps")
-                .tabItem {
-                    
-                    Image("apps")
-                        .renderingMode(.template)
-                    
-                    Text("Apps")
-                }
-            
-            Text("Search")
-                .tabItem {
-                    
-                    Image("search")
-                        .renderingMode(.template)
-                    
-                    Text("Search")
-                }
-        }
+            if detailObject.show {
+                
+                Detail(detail: detailObject, animation: animation)
+            }
+        } //: Z
     }
 }
 
