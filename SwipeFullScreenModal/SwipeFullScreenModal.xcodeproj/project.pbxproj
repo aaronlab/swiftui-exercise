@@ -14,6 +14,8 @@
 		A47E6CBF2584A8270022BAC3 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E6CBE2584A8270022BAC3 /* TabBar.swift */; };
 		A47E6CC32584A99E0022BAC3 /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E6CC22584A99E0022BAC3 /* Today.swift */; };
 		A47E6CC72584AA640022BAC3 /* TodayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E6CC62584AA640022BAC3 /* TodayItem.swift */; };
+		A47E6CCB2584AB3C0022BAC3 /* TodayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E6CCA2584AB3C0022BAC3 /* TodayCardView.swift */; };
+		A47E6CCF2584AD840022BAC3 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E6CCE2584AD840022BAC3 /* Detail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		A47E6CBE2584A8270022BAC3 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		A47E6CC22584A99E0022BAC3 /* Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
 		A47E6CC62584AA640022BAC3 /* TodayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayItem.swift; sourceTree = "<group>"; };
+		A47E6CCA2584AB3C0022BAC3 /* TodayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCardView.swift; sourceTree = "<group>"; };
+		A47E6CCE2584AD840022BAC3 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 			children = (
 				A47E6CBE2584A8270022BAC3 /* TabBar.swift */,
 				A47E6CC22584A99E0022BAC3 /* Today.swift */,
+				A47E6CCA2584AB3C0022BAC3 /* TodayCardView.swift */,
+				A47E6CCE2584AD840022BAC3 /* Detail.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47E6CCB2584AB3C0022BAC3 /* TodayCardView.swift in Sources */,
+				A47E6CCF2584AD840022BAC3 /* Detail.swift in Sources */,
 				A47E6CBF2584A8270022BAC3 /* TabBar.swift in Sources */,
 				A47E6CC72584AA640022BAC3 /* TodayItem.swift in Sources */,
 				A47E6CAE2584A7E60022BAC3 /* ContentView.swift in Sources */,

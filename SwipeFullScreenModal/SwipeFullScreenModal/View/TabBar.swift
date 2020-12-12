@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct TabBar: View {
+    
+    @Namespace var animation
+    
     var body: some View {
         
         TabView {
             
-            Today()
+            Today(animation: animation)
                 .tabItem {
                     
                     Image("today")

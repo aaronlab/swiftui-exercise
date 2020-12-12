@@ -11,6 +11,7 @@ struct TodayCardView: View {
     let item: TodayItem
     
     @Environment(\.colorScheme) var color
+    var animation: Namespace.ID
     
     var body: some View {
         
@@ -19,6 +20,7 @@ struct TodayCardView: View {
             Image(item.contentImage)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
+                .matchedGeometryEffect(id: item.contentImage, in: animation)
                 .frame(width: UIScreen.main.bounds.width - 30, height: 250)
             
             HStack {
@@ -33,7 +35,6 @@ struct TodayCardView: View {
                     
                     Text(item.title)
                         .fontWeight(.bold)
-                        .foregroundColor(.white)
                     
                     Text(item.category)
                         .font(.caption)
@@ -44,9 +45,10 @@ struct TodayCardView: View {
                 
                 VStack {
                     
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Button(action: {}, label: {
                         
                         Text("GET")
+                            .fontWeight(.bold)
                             .padding(.vertical, 10)
                             .padding(.horizontal, 25)
                             .background(Color.primary.opacity(0.1))
@@ -58,6 +60,7 @@ struct TodayCardView: View {
                         .foregroundColor(.gray)
                 } //: V
             } //: H
+            .matchedGeometryEffect(id: item.id, in: animation)
             .padding()
         } //: V
         .background(color == .dark ? Color.black : Color.white)

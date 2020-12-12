@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Today: View {
+    
+    var animation: Namespace.ID
+    
     var body: some View {
         
         ScrollView {
@@ -35,15 +38,15 @@ struct Today: View {
                     } //: B
                     
                 } // : H
+                .padding()
+                
+                ForEach(items, id: \.id) { item in
+                    
+                    TodayCardView(item: item, animation: animation)
+                }
             } //: V
-            .padding()
+            .padding(.bottom)
         } //: SCROLL
         .background(Color.primary.opacity(0.06).ignoresSafeArea())
-    }
-}
-
-struct Today_Previews: PreviewProvider {
-    static var previews: some View {
-        Today()
     }
 }
