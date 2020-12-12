@@ -10,6 +10,7 @@ import SwiftUI
 struct Today: View {
     
     var animation: Namespace.ID
+    @EnvironmentObject var detail: DetailViewModel
     
     var body: some View {
         
@@ -43,6 +44,12 @@ struct Today: View {
                 ForEach(items, id: \.id) { item in
                     
                     TodayCardView(item: item, animation: animation)
+                        .onTapGesture {
+                            withAnimation(.interactiveSpring(response: 0.5, dampingFraction: 0.8, blendDuration: 0.8)) {
+                                detail.selectedItem = item
+                                detail.show.toggle()
+                            }
+                        }
                 }
             } //: V
             .padding(.bottom)
