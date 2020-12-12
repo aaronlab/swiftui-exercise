@@ -12,6 +12,7 @@
 		A47E6C8725849E750022BAC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47E6C8625849E750022BAC3 /* Assets.xcassets */; };
 		A47E6C8A25849E750022BAC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47E6C8925849E750022BAC3 /* Preview Assets.xcassets */; };
 		A47E6C972584A0810022BAC3 /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = A47E6C962584A0810022BAC3 /* splash.json */; };
+		A47E6C9A2584A2360022BAC3 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E6C992584A2360022BAC3 /* SplashScreen.swift */; };
 		EEAEC031E0C1A56B695525F0 /* Pods_Animated_Splash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FA5D4394E2BF14261BCF83 /* Pods_Animated_Splash.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		A47E6C8B25849E750022BAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47E6C9225849EAC0022BAC3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A47E6C962584A0810022BAC3 /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash.json; sourceTree = "<group>"; };
+		A47E6C992584A2360022BAC3 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		DC989ECD5BDCA635FD71F1EE /* Pods-Animated Splash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animated Splash.release.xcconfig"; path = "Target Support Files/Pods-Animated Splash/Pods-Animated Splash.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				A47E6C962584A0810022BAC3 /* splash.json */,
 				A47E6C8225849E740022BAC3 /* Animated_SplashApp.swift */,
 				A47E6C8425849E740022BAC3 /* ContentView.swift */,
+				A47E6C992584A2360022BAC3 /* SplashScreen.swift */,
 				A47E6C8625849E750022BAC3 /* Assets.xcassets */,
 				A47E6C8B25849E750022BAC3 /* Info.plist */,
 				A47E6C8825849E750022BAC3 /* Preview Content */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47E6C9A2584A2360022BAC3 /* SplashScreen.swift in Sources */,
 				A47E6C8525849E740022BAC3 /* ContentView.swift in Sources */,
 				A47E6C8325849E740022BAC3 /* Animated_SplashApp.swift in Sources */,
 			);
