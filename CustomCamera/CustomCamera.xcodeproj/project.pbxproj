@@ -11,6 +11,8 @@
 		A4C3A3172585B8790009E275 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A3162585B8790009E275 /* ContentView.swift */; };
 		A4C3A3192585B87A0009E275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A3182585B87A0009E275 /* Assets.xcassets */; };
 		A4C3A31C2585B87A0009E275 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A31B2585B87A0009E275 /* Preview Assets.xcassets */; };
+		A4C3A3252585B8AE0009E275 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A3242585B8AE0009E275 /* CameraView.swift */; };
+		A4C3A3282585B9CF0009E275 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A3272585B9CF0009E275 /* CameraModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		A4C3A3182585B87A0009E275 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4C3A31B2585B87A0009E275 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4C3A31D2585B87A0009E275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C3A3242585B8AE0009E275 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		A4C3A3272585B9CF0009E275 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				A4C3A3142585B8790009E275 /* CustomCameraApp.swift */,
 				A4C3A3162585B8790009E275 /* ContentView.swift */,
+				A4C3A3242585B8AE0009E275 /* CameraView.swift */,
+				A4C3A3272585B9CF0009E275 /* CameraModel.swift */,
 				A4C3A3182585B87A0009E275 /* Assets.xcassets */,
 				A4C3A31D2585B87A0009E275 /* Info.plist */,
 				A4C3A31A2585B87A0009E275 /* Preview Content */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C3A3252585B8AE0009E275 /* CameraView.swift in Sources */,
 				A4C3A3172585B8790009E275 /* ContentView.swift in Sources */,
+				A4C3A3282585B9CF0009E275 /* CameraModel.swift in Sources */,
 				A4C3A3152585B8790009E275 /* CustomCameraApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
