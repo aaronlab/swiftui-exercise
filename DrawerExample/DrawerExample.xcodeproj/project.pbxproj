@@ -8,19 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		A48F8DE62588C6DC0046F35F /* DrawerExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48F8DE52588C6DC0046F35F /* DrawerExampleApp.swift */; };
-		A48F8DE82588C6DC0046F35F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48F8DE72588C6DC0046F35F /* ContentView.swift */; };
+		A48F8DE82588C6DC0046F35F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48F8DE72588C6DC0046F35F /* HomeView.swift */; };
 		A48F8DEA2588C6DD0046F35F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48F8DE92588C6DD0046F35F /* Assets.xcassets */; };
 		A48F8DED2588C6DD0046F35F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48F8DEC2588C6DD0046F35F /* Preview Assets.xcassets */; };
 		A48F8DF72588C6FC0046F35F /* Drawer in Frameworks */ = {isa = PBXBuildFile; productRef = A48F8DF62588C6FC0046F35F /* Drawer */; };
+		A48F8DFA2588C72F0046F35F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48F8DF92588C72F0046F35F /* HomeViewModel.swift */; };
+		A48F8DFD2588C73A0046F35F /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48F8DFC2588C73A0046F35F /* SecondView.swift */; };
+		A48F8E052588C7C70046F35F /* NavigationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48F8E042588C7C70046F35F /* NavigationStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A48F8DE22588C6DC0046F35F /* DrawerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48F8DE52588C6DC0046F35F /* DrawerExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerExampleApp.swift; sourceTree = "<group>"; };
-		A48F8DE72588C6DC0046F35F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A48F8DE72588C6DC0046F35F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A48F8DE92588C6DD0046F35F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A48F8DEC2588C6DD0046F35F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A48F8DEE2588C6DD0046F35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A48F8DF92588C72F0046F35F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A48F8DFC2588C73A0046F35F /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		A48F8E042588C7C70046F35F /* NavigationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				A48F8DE52588C6DC0046F35F /* DrawerExampleApp.swift */,
-				A48F8DE72588C6DC0046F35F /* ContentView.swift */,
+				A48F8DE72588C6DC0046F35F /* HomeView.swift */,
+				A48F8DF92588C72F0046F35F /* HomeViewModel.swift */,
+				A48F8DFC2588C73A0046F35F /* SecondView.swift */,
+				A48F8E042588C7C70046F35F /* NavigationStatus.swift */,
 				A48F8DE92588C6DD0046F35F /* Assets.xcassets */,
 				A48F8DEE2588C6DD0046F35F /* Info.plist */,
 				A48F8DEB2588C6DD0046F35F /* Preview Content */,
@@ -146,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A48F8DE82588C6DC0046F35F /* ContentView.swift in Sources */,
+				A48F8DE82588C6DC0046F35F /* HomeView.swift in Sources */,
+				A48F8E052588C7C70046F35F /* NavigationStatus.swift in Sources */,
 				A48F8DE62588C6DC0046F35F /* DrawerExampleApp.swift in Sources */,
+				A48F8DFD2588C73A0046F35F /* SecondView.swift in Sources */,
+				A48F8DFA2588C72F0046F35F /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
