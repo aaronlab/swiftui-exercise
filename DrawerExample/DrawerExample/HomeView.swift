@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Drawer
 
 struct HomeView: View {
     
@@ -30,8 +31,38 @@ struct HomeView: View {
                         }, label: {
                             Text("Go to the Second View")
                         })
+                        
+                        Button(action: {
+                            self.viewModel.showDrawer.toggle()
+                        }, label: {
+                            Text("Show Drawer")
+                        })
                     } //: V
                     .frame(width: geo.size.width, height: geo.size.height)
+                    
+                    if viewModel.showDrawer {
+                        
+                        Drawer {
+                            
+                            ZStack {
+                                
+                                RoundedRectangle(cornerRadius: 12)
+                                    .foregroundColor(.white)
+                                    .shadow(radius: 100)
+                                
+                                VStack(alignment: .center) {
+                                    Spacer().frame(height: 4.0)
+                                    RoundedRectangle(cornerRadius: 3.0)
+                                        .foregroundColor(.gray)
+                                        .frame(width: 30.0, height: 6.0)
+                                    Spacer()
+                                } //: V
+                            } //: Z
+                        } //: D
+                        .rest(at: .constant([100, 340, UIScreen.main.bounds.height - 40]))
+                        .impact(.light)
+                        .edgesIgnoringSafeArea(.all)
+                    } //: IF
                 } //: Z
             } //: G
             .navigationBarTitle("Home View")
