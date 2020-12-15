@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		A48F8DE82588C6DC0046F35F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48F8DE72588C6DC0046F35F /* ContentView.swift */; };
 		A48F8DEA2588C6DD0046F35F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48F8DE92588C6DD0046F35F /* Assets.xcassets */; };
 		A48F8DED2588C6DD0046F35F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48F8DEC2588C6DD0046F35F /* Preview Assets.xcassets */; };
+		A48F8DF72588C6FC0046F35F /* Drawer in Frameworks */ = {isa = PBXBuildFile; productRef = A48F8DF62588C6FC0046F35F /* Drawer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48F8DF72588C6FC0046F35F /* Drawer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = DrawerExample;
+			packageProductDependencies = (
+				A48F8DF62588C6FC0046F35F /* Drawer */,
+			);
 			productName = DrawerExample;
 			productReference = A48F8DE22588C6DC0046F35F /* DrawerExample.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = A48F8DD92588C6DC0046F35F;
+			packageReferences = (
+				A48F8DF52588C6FC0046F35F /* XCRemoteSwiftPackageReference "swiftui-drawer" */,
+			);
 			productRefGroup = A48F8DE32588C6DC0046F35F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A48F8DF52588C6FC0046F35F /* XCRemoteSwiftPackageReference "swiftui-drawer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maustinstar/swiftui-drawer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A48F8DF62588C6FC0046F35F /* Drawer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A48F8DF52588C6FC0046F35F /* XCRemoteSwiftPackageReference "swiftui-drawer" */;
+			productName = Drawer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A48F8DDA2588C6DC0046F35F /* Project object */;
 }
