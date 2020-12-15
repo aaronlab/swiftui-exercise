@@ -11,5 +11,6 @@ final class HomeViewModel: ObservableObject {
     
     var destination = SecondView()
     @Published var navigationStatus: NavigationStatus? = .ready
+    @Published var showDrawer: Bool = false
     
 }
