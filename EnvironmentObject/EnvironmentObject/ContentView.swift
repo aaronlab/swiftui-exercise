@@ -13,18 +13,21 @@ struct ContentView: View {
     @State private var showFullScreen: Bool = false
     
     var body: some View {
-        VStack {
-            Text("Clicked: \(myObj.numberOfClicks)")
-            
-            Button(action: {
-                myObj.numberOfClicks += 1
-                showFullScreen.toggle()
-            }, label: {
-                Text("Button")
-            })
-        }
-        .fullScreenCover(isPresented: $showFullScreen) {
-            Text("")
+        NavigationView {
+            VStack {
+                Text("Clicked: \(myObj.numberOfClicks)")
+                
+                Button(action: {
+                    myObj.numberOfClicks += 1
+                    showFullScreen.toggle()
+                }, label: {
+                    Text("Button")
+                })
+            }
+            .fullScreenCover(isPresented: $showFullScreen) {
+                FullScreenSheet()
+            }
+            .navigationBarTitle("Home")
         }
     }
 }

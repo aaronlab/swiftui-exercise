@@ -12,6 +12,7 @@
 		A47BD94C258CD83F00664FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47BD94B258CD83F00664FC4 /* Assets.xcassets */; };
 		A47BD94F258CD83F00664FC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47BD94E258CD83F00664FC4 /* Preview Assets.xcassets */; };
 		A47BD958258CD90200664FC4 /* MyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD957258CD90200664FC4 /* MyObject.swift */; };
+		A47BD95B258CDDA800664FC4 /* FullScreenSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD95A258CDDA800664FC4 /* FullScreenSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A47BD94E258CD83F00664FC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A47BD950258CD83F00664FC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47BD957258CD90200664FC4 /* MyObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyObject.swift; sourceTree = "<group>"; };
+		A47BD95A258CDDA800664FC4 /* FullScreenSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				A47BD947258CD83E00664FC4 /* EnvironmentObjectApp.swift */,
 				A47BD949258CD83E00664FC4 /* ContentView.swift */,
+				A47BD95A258CDDA800664FC4 /* FullScreenSheet.swift */,
 				A47BD957258CD90200664FC4 /* MyObject.swift */,
 				A47BD94B258CD83F00664FC4 /* Assets.xcassets */,
 				A47BD950258CD83F00664FC4 /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47BD95B258CDDA800664FC4 /* FullScreenSheet.swift in Sources */,
 				A47BD94A258CD83E00664FC4 /* ContentView.swift in Sources */,
 				A47BD958258CD90200664FC4 /* MyObject.swift in Sources */,
 				A47BD948258CD83E00664FC4 /* EnvironmentObjectApp.swift in Sources */,
