@@ -8,9 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject private var myObj: MyObject
+    @State private var showFullScreen: Bool = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Clicked: \(myObj.numberOfClicks)")
+            
+            Button(action: {
+                myObj.numberOfClicks += 1
+                showFullScreen.toggle()
+            }, label: {
+                Text("Button")
+            })
+        }
+        .fullScreenCover(isPresented: $showFullScreen) {
+            Text("")
+        }
     }
 }
 
