@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TestSPM",
+        "repositoryURL": "https://dev_aaronlee@bitbucket.org/dev_aaronlee/testspm.git",
+        "state": {
+          "branch": "main",
+          "revision": "571b4d8866f5a56d25f2912eaea8822bad476f17",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
