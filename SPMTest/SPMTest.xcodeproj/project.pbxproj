@@ -11,7 +11,7 @@
 		A42CD04E2590D6B400C64AEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42CD04D2590D6B400C64AEE /* ContentView.swift */; };
 		A42CD0502590D6B500C64AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42CD04F2590D6B500C64AEE /* Assets.xcassets */; };
 		A42CD0532590D6B500C64AEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42CD0522590D6B500C64AEE /* Preview Assets.xcassets */; };
-		A42CD05D2590D6E300C64AEE /* TestSPM in Frameworks */ = {isa = PBXBuildFile; productRef = A42CD05C2590D6E300C64AEE /* TestSPM */; };
+		A42CD0672590D79300C64AEE /* TestSPM in Frameworks */ = {isa = PBXBuildFile; productRef = A42CD0662590D79300C64AEE /* TestSPM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A42CD05D2590D6E300C64AEE /* TestSPM in Frameworks */,
+				A42CD0672590D79300C64AEE /* TestSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 			);
 			name = SPMTest;
 			packageProductDependencies = (
-				A42CD05C2590D6E300C64AEE /* TestSPM */,
+				A42CD0662590D79300C64AEE /* TestSPM */,
 			);
 			productName = SPMTest;
 			productReference = A42CD0482590D6B400C64AEE /* SPMTest.app */;
@@ -118,7 +118,7 @@
 			);
 			mainGroup = A42CD03F2590D6B400C64AEE;
 			packageReferences = (
-				A42CD05B2590D6E300C64AEE /* XCRemoteSwiftPackageReference "test-spm" */,
+				A42CD0652590D79300C64AEE /* XCRemoteSwiftPackageReference "test-spm" */,
 			);
 			productRefGroup = A42CD0492590D6B400C64AEE /* Products */;
 			projectDirPath = "";
@@ -338,7 +338,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A42CD05B2590D6E300C64AEE /* XCRemoteSwiftPackageReference "test-spm" */ = {
+		A42CD0652590D79300C64AEE /* XCRemoteSwiftPackageReference "test-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/aaronLab/test-spm";
 			requirement = {
@@ -349,9 +349,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A42CD05C2590D6E300C64AEE /* TestSPM */ = {
+		A42CD0662590D79300C64AEE /* TestSPM */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A42CD05B2590D6E300C64AEE /* XCRemoteSwiftPackageReference "test-spm" */;
+			package = A42CD0652590D79300C64AEE /* XCRemoteSwiftPackageReference "test-spm" */;
 			productName = TestSPM;
 		};
 /* End XCSwiftPackageProductDependency section */
