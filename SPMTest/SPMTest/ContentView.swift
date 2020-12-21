@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
+import TestSPM
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TestSPM.TestView()
     }
 }
 
