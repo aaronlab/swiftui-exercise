@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,6 @@
 		A42CD04E2590D6B400C64AEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42CD04D2590D6B400C64AEE /* ContentView.swift */; };
 		A42CD0502590D6B500C64AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42CD04F2590D6B500C64AEE /* Assets.xcassets */; };
 		A42CD0532590D6B500C64AEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42CD0522590D6B500C64AEE /* Preview Assets.xcassets */; };
-		A42CD06D2590D7D500C64AEE /* TestSPM in Frameworks */ = {isa = PBXBuildFile; productRef = A42CD06C2590D7D500C64AEE /* TestSPM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +20,6 @@
 		A42CD04F2590D6B500C64AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A42CD0522590D6B500C64AEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A42CD0542590D6B500C64AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A42CD0692590D7C800C64AEE /* TestSPM */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TestSPM; path = ../../TestSPM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +27,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A42CD06D2590D7D500C64AEE /* TestSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +37,6 @@
 			isa = PBXGroup;
 			children = (
 				A42CD04A2590D6B400C64AEE /* SPMTest */,
-				A42CD0692590D7C800C64AEE /* TestSPM */,
 				A42CD0492590D6B400C64AEE /* Products */,
 				A42CD06B2590D7D500C64AEE /* Frameworks */,
 			);
@@ -98,7 +94,6 @@
 			);
 			name = SPMTest;
 			packageProductDependencies = (
-				A42CD06C2590D7D500C64AEE /* TestSPM */,
 			);
 			productName = SPMTest;
 			productReference = A42CD0482590D6B400C64AEE /* SPMTest.app */;
@@ -345,13 +340,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A42CD06C2590D7D500C64AEE /* TestSPM */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TestSPM;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A42CD0402590D6B400C64AEE /* Project object */;
 }
