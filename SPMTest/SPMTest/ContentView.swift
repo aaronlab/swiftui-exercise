@@ -10,7 +10,10 @@ import TestSPM
 
 struct ContentView: View {
     var body: some View {
-        TestSPM.TestView()
+        VStack {
+            TestSPM.TestView()
+            TestView.TestView()
+        }
     }
 }
 
