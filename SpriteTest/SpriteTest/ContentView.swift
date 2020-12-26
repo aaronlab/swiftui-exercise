@@ -37,6 +37,7 @@ struct ContentView: View {
     var body: some View {
         SpriteView(scene: scene)
             .frame(width: 300, height: 400)
+            .preferredColorScheme(.light)
     }
 }
 
