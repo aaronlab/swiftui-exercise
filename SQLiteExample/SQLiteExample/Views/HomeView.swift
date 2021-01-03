@@ -30,12 +30,21 @@ struct HomeView: View {
                     Spacer(minLength: 0)
                     
                     NavigationLink(
-                        "Add",
-                        destination: AddView().onDisappear {
-                            self.viewModel.loadUsers()
-                        }
-                    ) //: NL
-                        .padding()
+                        destination: viewModel.destination
+                            .onDisappear {
+                                self.viewModel.navigationStatus = .ready
+                            },
+                        tag: .pop,
+                        selection: self.$viewModel.navigationStatus,
+                        label: {EmptyView()})
+                    
+                    Button(action: {
+                        self.viewModel.destination = AnyView(AddView())
+                        self.viewModel.navigationStatus = .pop
+                    }, label: {
+                        Text("Add")
+                    })
+                    .padding()
                 } //: H
                 
                 List {

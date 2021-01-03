@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
 
 final class HomeViewModel: ObservableObject {
     
     @Published var users = [User]()
+    @Published var navigationStatus: NavigationStatus? = .ready
+    var destination: AnyView = AnyView(EmptyView())
     
     func loadUsers() {
         SQLiteService.readUsers { users in

@@ -10,11 +10,13 @@ import SQLite
 
 final class SQLiteService {
     
+    /// DB Connection
     private static func getConnection() -> Connection? {
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         return try? Connection("\(path)/db.sqlite3")
     }
     
+    /// Save User
     static func saveUser(with user: User, onSuccess: (() -> Void)? = nil, onFailure: ((Error?) -> Void)? = nil) {
         guard let db = self.getConnection()
         
@@ -51,6 +53,7 @@ final class SQLiteService {
         }
     }
     
+    // Get All Users
     static func readUsers(onSuccess: (([User]) -> Void)? = nil, onFailure: ((Error?) -> Void)? = nil) {
         guard let db = self.getConnection()
         
@@ -60,7 +63,6 @@ final class SQLiteService {
         }
         
         let userTable = Table("users")
-        let id = Expression<Int64>("id")
         let name = Expression<String>("name")
         let email = Expression<String>("email")
         let mobileNo = Expression<String>("mobileNo")
@@ -74,7 +76,6 @@ final class SQLiteService {
                 
                 let loadedUser = User.init(name: userName, email: userEmail, mobileNo: userMobileNo)
                 users.append(loadedUser)
-                print("id: \(user[id]), name: \(userName), email: \(userEmail), mobileNo: \(userMobileNo)")
             }
             onSuccess?(users)
         } catch {
