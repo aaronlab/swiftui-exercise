@@ -15,6 +15,8 @@
 		A458225B25A1B4E100F66F6E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458225A25A1B4E100F66F6E /* HomeView.swift */; };
 		A458225E25A1B4EA00F66F6E /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458225D25A1B4EA00F66F6E /* AddView.swift */; };
 		A458226525A1B79E00F66F6E /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458226425A1B79E00F66F6E /* AddViewModel.swift */; };
+		A458226C25A1BA8400F66F6E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458226B25A1BA8400F66F6E /* User.swift */; };
+		A458226F25A1BB1900F66F6E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458226E25A1BB1900F66F6E /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		A458225A25A1B4E100F66F6E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A458225D25A1B4EA00F66F6E /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		A458226425A1B79E00F66F6E /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
+		A458226B25A1BA8400F66F6E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A458226E25A1BB1900F66F6E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 		A458225325A1B4BC00F66F6E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A458226B25A1BA8400F66F6E /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 		A458225425A1B4C000F66F6E /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				A458226E25A1BB1900F66F6E /* HomeViewModel.swift */,
 				A458226425A1B79E00F66F6E /* AddViewModel.swift */,
 			);
 			path = "View Models";
@@ -189,6 +195,8 @@
 			files = (
 				A458225E25A1B4EA00F66F6E /* AddView.swift in Sources */,
 				A458225B25A1B4E100F66F6E /* HomeView.swift in Sources */,
+				A458226F25A1BB1900F66F6E /* HomeViewModel.swift in Sources */,
+				A458226C25A1BA8400F66F6E /* User.swift in Sources */,
 				A458223C25A1B42000F66F6E /* ContentView.swift in Sources */,
 				A458226525A1B79E00F66F6E /* AddViewModel.swift in Sources */,
 				A458223A25A1B42000F66F6E /* SQLiteExampleApp.swift in Sources */,

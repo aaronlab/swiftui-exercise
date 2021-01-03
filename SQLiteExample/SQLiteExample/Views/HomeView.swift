@@ -8,10 +8,23 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    // MARK: - PROPERTIES
+    
+    @StateObject private var viewModel: HomeViewModel
+    
+    // MARK: - INIT
+    
+    init() {
+        self._viewModel = StateObject(wrappedValue: HomeViewModel())
+    }
+    
+    // MARK: - BODY
+    
     var body: some View {
         NavigationView {
             
-            VStack(alignment: .leading, spacing: 0) {
+            VStack(alignment: .leading, spacing: 4) {
                 
                 HStack {
                     Spacer(minLength: 0)
@@ -22,24 +35,34 @@ struct HomeView: View {
                 
                 List {
                     
-                    self.makeRow(name: "Aaron", email: "aaronlab.net@gmail.com", mobileNo: "123456")
+                    Section(header: Text("Saved List")) {
+                        
+                        ForEach(self.viewModel.users, id: \.id) { user in
+                            
+                            self.makeRow(user: user)
+                        }
+                    } //: S
+                    
                 } //: L
                 .listStyle(PlainListStyle())
             } //: V
             .navigationBarTitle("Home View", displayMode: .inline)
+            .onAppear {
+                self.viewModel.loadUsers()
+            }
         } //: N
     }
     
-    private func makeRow(name: String?, email: String?, mobileNo: String?) -> some View {
+    private func makeRow(user: User) -> some View {
         return HStack {
             
-            Text(name ?? "N/A")
+            Text(user.name)
                 .lineLimit(1)
             Spacer(minLength: 0)
-            Text(email ?? "N/A")
+            Text(user.email)
                 .lineLimit(1)
             Spacer(minLength: 0)
-            Text(mobileNo ?? "N/A")
+            Text(user.mobileNo)
                 .lineLimit(1)
         } //: H
     }
