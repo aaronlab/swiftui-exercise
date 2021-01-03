@@ -13,14 +13,35 @@ struct HomeView: View {
             
             VStack(alignment: .leading, spacing: 0) {
                 
-                NavigationLink("Add", destination: AddView())
+                HStack {
+                    Spacer(minLength: 0)
+                    
+                    NavigationLink("Add", destination: AddView())
+                        .padding()
+                } //: H
                 
                 List {
-                    Text("Item 1")
-                }
-            }
+                    
+                    self.makeRow(name: "Aaron", email: "aaronlab.net@gmail.com", mobileNo: "123456")
+                } //: L
+                .listStyle(PlainListStyle())
+            } //: V
             .navigationBarTitle("Home View", displayMode: .inline)
-        }
+        } //: N
+    }
+    
+    private func makeRow(name: String?, email: String?, mobileNo: String?) -> some View {
+        return HStack {
+            
+            Text(name ?? "N/A")
+                .lineLimit(1)
+            Spacer(minLength: 0)
+            Text(email ?? "N/A")
+                .lineLimit(1)
+            Spacer(minLength: 0)
+            Text(mobileNo ?? "N/A")
+                .lineLimit(1)
+        } //: H
     }
 }
 

@@ -9,11 +9,17 @@ import SwiftUI
 
 struct AddView: View {
     
+    // MARK: - PROPERTIES
+    @Environment(\.presentationMode) private var presentationMode
     @StateObject private var viewModel: AddViewModel
+    
+    // MARK: - INIT
     
     init() {
         self._viewModel = StateObject(wrappedValue: AddViewModel())
     }
+    
+    // MARK: - BODY
     
     var body: some View {
         VStack {
@@ -24,8 +30,25 @@ struct AddView: View {
             
         } //: V
         .padding()
+        .navigationBarTitle("Add")
+        .navigationBarItems(
+            trailing: Button(
+                action: {
+                    self.save()
+                },
+                label: {
+                    Text("Save")
+                }
+            ) //: B
+            .disabled(
+                self.viewModel.email == "" || self.viewModel.name == "" || self.viewModel.mobileNo == ""
+            )
+        )
     }
     
+    // MARK: - METHODS
+    
+    /// Make a row for Add View
     private func makeRow(fieldName: String, _ text: Binding<String>, keyboardType: UIKeyboardType = .default, contentType: UITextContentType? = .none) -> some View {
         return HStack {
             
@@ -37,6 +60,14 @@ struct AddView: View {
                 .textContentType(contentType)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
         } //: H
+    }
+    
+    /// Save Data
+    private func save() {
+        // TODO: SAVE
+        
+        // This should be onSuccess Completion
+        self.presentationMode.wrappedValue.dismiss()
     }
 }
 
