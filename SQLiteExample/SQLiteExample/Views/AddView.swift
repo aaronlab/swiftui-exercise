@@ -9,16 +9,18 @@ import SwiftUI
 
 struct AddView: View {
     
-    @State private var name: String = ""
-    @State private var email: String = ""
-    @State private var mobileNo: String = ""
+    @StateObject private var viewModel: AddViewModel
+    
+    init() {
+        self._viewModel = StateObject(wrappedValue: AddViewModel())
+    }
     
     var body: some View {
         VStack {
             
-            self.makeRow(fieldName: "Name: ", self.$name)
-            self.makeRow(fieldName: "Email: ", self.$email)
-            self.makeRow(fieldName: "Mobile: ", self.$mobileNo)
+            self.makeRow(fieldName: "Name: ", self.$viewModel.name)
+            self.makeRow(fieldName: "Email: ", self.$viewModel.email)
+            self.makeRow(fieldName: "Mobile: ", self.$viewModel.mobileNo)
             
         } //: V
         .padding()
