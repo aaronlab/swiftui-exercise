@@ -58,6 +58,8 @@ struct AddView: View {
             TextField("", text: text)
                 .keyboardType(keyboardType)
                 .textContentType(contentType)
+                .autocapitalization(.none)
+                .disableAutocorrection(true)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
         } //: H
     }
@@ -65,9 +67,12 @@ struct AddView: View {
     /// Save Data
     private func save() {
         // TODO: SAVE
-        
-        // This should be onSuccess Completion
-        self.presentationMode.wrappedValue.dismiss()
+        self.viewModel.saveUser {
+            self.presentationMode.wrappedValue.dismiss()
+        } onFailure: { error in
+            print(error as Any)
+        }
+
     }
 }
 
