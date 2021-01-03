@@ -12,7 +12,11 @@ final class HomeViewModel: ObservableObject {
     @Published var users = [User]()
     
     func loadUsers() {
-        self.users = User.placeholder()
+        SQLiteService.readUsers { users in
+            self.users = users
+        } onFailure: { error in
+            print(error as Any)
+        }
     }
     
 }

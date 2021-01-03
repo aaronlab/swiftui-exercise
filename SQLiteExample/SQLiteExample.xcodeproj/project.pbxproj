@@ -17,6 +17,7 @@
 		A458226525A1B79E00F66F6E /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458226425A1B79E00F66F6E /* AddViewModel.swift */; };
 		A458226C25A1BA8400F66F6E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458226B25A1BA8400F66F6E /* User.swift */; };
 		A458226F25A1BB1900F66F6E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458226E25A1BB1900F66F6E /* HomeViewModel.swift */; };
+		A458227525A1BDCE00F66F6E /* SQLiteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458227425A1BDCE00F66F6E /* SQLiteService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A458226425A1B79E00F66F6E /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
 		A458226B25A1BA8400F66F6E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A458226E25A1BB1900F66F6E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A458227425A1BDCE00F66F6E /* SQLiteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		A458223825A1B42000F66F6E /* SQLiteExample */ = {
 			isa = PBXGroup;
 			children = (
+				A458227325A1BDC600F66F6E /* Services */,
 				A458225225A1B4B700F66F6E /* Application */,
 				A458225125A1B4B100F66F6E /* Views */,
 				A458225425A1B4C000F66F6E /* View Models */,
@@ -116,6 +119,14 @@
 				A458226425A1B79E00F66F6E /* AddViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		A458227325A1BDC600F66F6E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A458227425A1BDCE00F66F6E /* SQLiteService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A458225E25A1B4EA00F66F6E /* AddView.swift in Sources */,
+				A458227525A1BDCE00F66F6E /* SQLiteService.swift in Sources */,
 				A458225B25A1B4E100F66F6E /* HomeView.swift in Sources */,
 				A458226F25A1BB1900F66F6E /* HomeViewModel.swift in Sources */,
 				A458226C25A1BA8400F66F6E /* User.swift in Sources */,

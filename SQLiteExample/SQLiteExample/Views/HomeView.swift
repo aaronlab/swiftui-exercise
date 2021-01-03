@@ -29,7 +29,12 @@ struct HomeView: View {
                 HStack {
                     Spacer(minLength: 0)
                     
-                    NavigationLink("Add", destination: AddView())
+                    NavigationLink(
+                        "Add",
+                        destination: AddView().onDisappear {
+                            self.viewModel.loadUsers()
+                        }
+                    ) //: NL
                         .padding()
                 } //: H
                 
