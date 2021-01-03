@@ -9,7 +9,18 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            
+            VStack(alignment: .leading, spacing: 0) {
+                
+                NavigationLink("Add", destination: AddView())
+                
+                List {
+                    Text("Item 1")
+                }
+            }
+            .navigationBarTitle("Home View", displayMode: .inline)
+        }
     }
 }
 
