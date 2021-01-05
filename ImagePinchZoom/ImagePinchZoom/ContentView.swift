@@ -8,10 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var scale: CGFloat = 1.0
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ScrollView([.horizontal, .vertical], showsIndicators: false) {
+            Image("sample")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .scaleEffect(self.scale)
+                .frame(width: UIScreen.main.bounds.width * self.scale, height: UIScreen.main.bounds.height * self.scale)
+        }
+        .gesture(
+            MagnificationGesture()
+                .onChanged(self.onChanged(with:))
+        )
+        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     }
+    
+    private func onChanged(with value: CGFloat) {
+        self.scale = value
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
