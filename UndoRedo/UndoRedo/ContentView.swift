@@ -9,68 +9,108 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // MARK: - PROPERTIES
+    
+    @Environment(\.colorScheme) private var colorScheme
     @State private var rectangles = [AnyView]()
     @State private var willRedo = [AnyView]()
     @State private var colorIndex = 0
+    private let gesture: DragGesture = DragGesture(minimumDistance: 0, coordinateSpace: .local)
     
     var body: some View {
         GeometryReader { geo in
             
             VStack {
                 
-                HStack {
-                    
-                    Button(action: undo) {
-                        Text("Undo")
-                    }
-                    
-                    Spacer()
-                    
-                    Button(action: redo) {
-                        Text("Redo")
-                    }
-                } //: H
-                .padding()
+                self.makeMenuBar()
                 
-                GeometryReader { recs in
+                GeometryReader { rects in
                     
                     ZStack {
                         
-                        Rectangle()
-                            .foregroundColor(.white)
+                        self.makeBackground()
                         
-                        if !rectangles.isEmpty {
-                            ForEach(self.rectangles.indices, id: \.self) { index in
-                                
-                                self.rectangles[index]
-                            }
+                        if !self.rectangles.isEmpty {
+                            self.makeRectsView()
                         }
                         
                     } //: Z
-                    .frame(width: recs.size.width, height: recs.size.height)
+                    .frame(width: rects.size.width, height: rects.size.height)
                     .gesture(
-                        DragGesture(minimumDistance: 0, coordinateSpace: .local)
-                            .onChanged { val in
-                                self.makeRectangle(x: val.location.x, y: val.location.y)
-                            }
+                        self.gesture
+                            .onChanged(self.makeRectangle(_:))
                     )
-                }
+                } //: G2
                 
             } //: V
             
-        }
+        } //: G1
         
     }
     
-    private func makeRectangle(x: CGFloat, y: CGFloat) {
-        self.willRedo.removeAll()
+}
+
+// MARK: - Make Views
+
+extension ContentView {
+    
+    /// Menu Bar
+    private func makeMenuBar() -> some View {
+        return HStack {
+            
+            Button(action: undo) {
+                Text("Undo")
+            }
+            
+            Spacer()
+            
+            Button(action: redo) {
+                Text("Redo")
+            }
+        } //: H
+        .padding()
+    }
+    
+    /// Background
+    private func makeBackground() -> some View {
+        return Rectangle()
+            .foregroundColor(self.getBackgroundColor())
+    }
+    
+    /// Rectangles View
+    private func makeRectsView() -> some View {
+        return ForEach(
+            self.rectangles.indices,
+            id: \.self
+        ) { index in
+            self.rectangles[index]
+        }
+    }
+    
+    /// Background Color
+    private func getBackgroundColor() -> Color {
+        return self.colorScheme == .dark ? .black : .white
+    }
+    
+}
+
+// MARK: - Business Logic
+
+extension ContentView {
+    
+    /// Rectangle Color
+    private func makeRectangle(_ value: DragGesture.Value) {
+        if !self.rectangles.isEmpty {
+            self.willRedo.removeAll()
+        }
         let newRect = Rectangle()
             .frame(width: 20, height: 20)
-            .position(x: x, y: y)
+            .position(x: value.location.x, y: value.location.y)
             .foregroundColor(self.getColor())
         self.rectangles.append(AnyView(newRect))
     }
     
+    /// Rectangle Color
     private func getColor() -> Color {
         switch self.colorIndex {
         case 0:
@@ -87,6 +127,7 @@ struct ContentView: View {
         }
     }
     
+    /// Undo
     private func undo() {
         if !self.rectangles.isEmpty {
             switch self.colorIndex {
@@ -99,6 +140,7 @@ struct ContentView: View {
         }
     }
     
+    /// Redo
     private func redo() {
         if !self.willRedo.isEmpty {
             switch self.colorIndex {
