@@ -17,12 +17,22 @@ struct DatePicker: UIViewRepresentable {
     }
     
     func makeUIView(context: UIViewRepresentableContext<DatePicker>) -> MDatePickerView {
+        self.initDate()
         let dateView = MDatePickerView()
-        dateView.Color = .gray
+        dateView.Color = .orange
         dateView.delegate = context.coordinator
         dateView.from = 1908
         dateView.to = 2100
         return dateView
+    }
+    
+    func initDate() {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy - MM - dd"
+        let date = formatter.string(from: Date())
+        DispatchQueue.main.async {
+            self.dateText = date
+        }
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context) { }
