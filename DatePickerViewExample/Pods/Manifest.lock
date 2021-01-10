@@ -1,0 +1,16 @@
+PODS:
+  - MDatePickerView (1.2.3)
+
+DEPENDENCIES:
+  - MDatePickerView
+
+SPEC REPOS:
+  trunk:
+    - MDatePickerView
+
+SPEC CHECKSUMS:
+  MDatePickerView: e26233885de2f13659c6101b3ed265eacf92c078
+
+PODFILE CHECKSUM: 8236653802be46da25ea297563c0b1c4ed29b12e
+
+COCOAPODS: 1.10.1
