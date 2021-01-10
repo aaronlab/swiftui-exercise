@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		A42B2BAC25AB28E4004326E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B2BAB25AB28E4004326E6 /* ContentView.swift */; };
 		A42B2BAE25AB28E5004326E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42B2BAD25AB28E5004326E6 /* Assets.xcassets */; };
 		A42B2BB125AB28E5004326E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42B2BB025AB28E5004326E6 /* Preview Assets.xcassets */; };
+		A42B2BC125AB29BD004326E6 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B2BC025AB29BD004326E6 /* DatePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A42B2BAD25AB28E5004326E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A42B2BB025AB28E5004326E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A42B2BB225AB28E5004326E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42B2BC025AB29BD004326E6 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				A42B2BA925AB28E4004326E6 /* DatePickerViewExampleApp.swift */,
 				A42B2BAB25AB28E4004326E6 /* ContentView.swift */,
+				A42B2BC025AB29BD004326E6 /* DatePicker.swift */,
 				A42B2BAD25AB28E5004326E6 /* Assets.xcassets */,
 				A42B2BB225AB28E5004326E6 /* Info.plist */,
 				A42B2BAF25AB28E5004326E6 /* Preview Content */,
@@ -90,7 +93,6 @@
 				2EE2225BFB2779473DCFBCD3 /* Pods-DatePickerViewExample.debug.xcconfig */,
 				3A7962597F58BBE29754E204 /* Pods-DatePickerViewExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +211,7 @@
 			files = (
 				A42B2BAC25AB28E4004326E6 /* ContentView.swift in Sources */,
 				A42B2BAA25AB28E4004326E6 /* DatePickerViewExampleApp.swift in Sources */,
+				A42B2BC125AB29BD004326E6 /* DatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
