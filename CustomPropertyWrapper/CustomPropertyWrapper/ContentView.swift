@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @MyNumber private var myNumber: Double = 0.1
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("\(self.myNumber)")
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
