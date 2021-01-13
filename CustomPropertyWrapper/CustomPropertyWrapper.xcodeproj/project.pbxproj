@@ -13,6 +13,7 @@
 		A43FF7A525AF2C0E00F80CBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43FF7A425AF2C0E00F80CBB /* Preview Assets.xcassets */; };
 		A43FF7AE25AF2C2D00F80CBB /* MyNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43FF7AD25AF2C2D00F80CBB /* MyNumber.swift */; };
 		A43FF7B125AF2D9F00F80CBB /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43FF7B025AF2D9F00F80CBB /* UserInfo.swift */; };
+		A43FF7B425AF2E6300F80CBB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43FF7B325AF2E6300F80CBB /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A43FF7A625AF2C0E00F80CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A43FF7AD25AF2C2D00F80CBB /* MyNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNumber.swift; sourceTree = "<group>"; };
 		A43FF7B025AF2D9F00F80CBB /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		A43FF7B325AF2E6300F80CBB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				A43FF79D25AF2C0D00F80CBB /* CustomPropertyWrapperApp.swift */,
 				A43FF79F25AF2C0D00F80CBB /* ContentView.swift */,
 				A43FF7B025AF2D9F00F80CBB /* UserInfo.swift */,
+				A43FF7B325AF2E6300F80CBB /* User.swift */,
 				A43FF7AD25AF2C2D00F80CBB /* MyNumber.swift */,
 				A43FF7A125AF2C0E00F80CBB /* Assets.xcassets */,
 				A43FF7A625AF2C0E00F80CBB /* Info.plist */,
@@ -147,6 +150,7 @@
 				A43FF7B125AF2D9F00F80CBB /* UserInfo.swift in Sources */,
 				A43FF7A025AF2C0D00F80CBB /* ContentView.swift in Sources */,
 				A43FF79E25AF2C0D00F80CBB /* CustomPropertyWrapperApp.swift in Sources */,
+				A43FF7B425AF2E6300F80CBB /* User.swift in Sources */,
 				A43FF7AE25AF2C2D00F80CBB /* MyNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
