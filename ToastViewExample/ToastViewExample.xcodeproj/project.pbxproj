@@ -11,6 +11,7 @@
 		A4586B9C25AF571B003C15B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4586B9B25AF571B003C15B2 /* ContentView.swift */; };
 		A4586B9E25AF571C003C15B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4586B9D25AF571C003C15B2 /* Assets.xcassets */; };
 		A4586BA125AF571C003C15B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4586BA025AF571C003C15B2 /* Preview Assets.xcassets */; };
+		A4586BAA25AF58D8003C15B2 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4586BA925AF58D8003C15B2 /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		A4586B9D25AF571C003C15B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4586BA025AF571C003C15B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4586BA225AF571C003C15B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4586BA925AF58D8003C15B2 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				A4586B9925AF571B003C15B2 /* ToastViewExampleApp.swift */,
 				A4586B9B25AF571B003C15B2 /* ContentView.swift */,
+				A4586BA925AF58D8003C15B2 /* ToastView.swift */,
 				A4586B9D25AF571C003C15B2 /* Assets.xcassets */,
 				A4586BA225AF571C003C15B2 /* Info.plist */,
 				A4586B9F25AF571C003C15B2 /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4586B9C25AF571B003C15B2 /* ContentView.swift in Sources */,
+				A4586BAA25AF58D8003C15B2 /* ToastView.swift in Sources */,
 				A4586B9A25AF571B003C15B2 /* ToastViewExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

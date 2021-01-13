@@ -14,11 +14,20 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             
+            Color.black.edgesIgnoringSafeArea(.all)
+            
             Button(action: {
-                self.showToast.toggle()
+                withAnimation(.spring(response: 0.5, dampingFraction: 0.3, blendDuration: 0.3)) {
+                    self.showToast.toggle()
+                }
             }, label: {
                 Text("Show Toast")
             })
+            
+            if self.showToast {
+                
+                ToastView(showToast: self.$showToast)
+            }
             
         }
     }
