@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		A43FF7C825AF36BF00F80CBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43FF7C725AF36BF00F80CBB /* ContentView.swift */; };
 		A43FF7CA25AF36C000F80CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43FF7C925AF36C000F80CBB /* Assets.xcassets */; };
 		A43FF7CD25AF36C000F80CBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43FF7CC25AF36C000F80CBB /* Preview Assets.xcassets */; };
+		A43FF7D725AF36F800F80CBB /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = A43FF7D625AF36F800F80CBB /* SkeletonUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43FF7D725AF36F800F80CBB /* SkeletonUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = SkeletonUITest;
+			packageProductDependencies = (
+				A43FF7D625AF36F800F80CBB /* SkeletonUI */,
+			);
 			productName = SkeletonUITest;
 			productReference = A43FF7C225AF36BF00F80CBB /* SkeletonUITest.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = A43FF7B925AF36BF00F80CBB;
+			packageReferences = (
+				A43FF7D525AF36F800F80CBB /* XCRemoteSwiftPackageReference "SkeletonUI" */,
+			);
 			productRefGroup = A43FF7C325AF36BF00F80CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A43FF7D525AF36F800F80CBB /* XCRemoteSwiftPackageReference "SkeletonUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CSolanaM/SkeletonUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A43FF7D625AF36F800F80CBB /* SkeletonUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A43FF7D525AF36F800F80CBB /* XCRemoteSwiftPackageReference "SkeletonUI" */;
+			productName = SkeletonUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A43FF7BA25AF36BF00F80CBB /* Project object */;
 }
