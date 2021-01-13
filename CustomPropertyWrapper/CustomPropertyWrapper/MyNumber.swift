@@ -13,7 +13,7 @@ struct MyNumber {
     
     var wrappedValue: Double {
         get { number }
-        set { number = newValue * 10 }
+        set { number = newValue * 1.1 }
     }
     
     init(wrappedValue: Double) {

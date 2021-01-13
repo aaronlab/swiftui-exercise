@@ -9,13 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @MyNumber private var myNumber: Double = 0.1
+    @State private var myNumber: MyNumber = MyNumber(wrappedValue: 0.1)
+    @State private var user: User = User()
     
     var body: some View {
-        VStack {
-            Text("\(self.myNumber)")
+        NavigationView {
             
-            
+            VStack {
+                Text("\(self.myNumber.wrappedValue)")
+                
+                Button(action: {
+                    self.myNumber.wrappedValue += 0.1
+                    self.user.name = "Aaron"
+                    self.user.userId = "aaron\(Int(myNumber.wrappedValue))"
+                }, label: {
+                    Text("Button")
+                })
+                
+                NavigationLink(destination: ChildView()) {
+                    Text("Child View")
+                }
+            }
         }
     }
     
