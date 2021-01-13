@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showToast: Bool = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            
+            Button(action: {
+                self.showToast.toggle()
+            }, label: {
+                Text("Show Toast")
+            })
+            
+        }
     }
 }
 
