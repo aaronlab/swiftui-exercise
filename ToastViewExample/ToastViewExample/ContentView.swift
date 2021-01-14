@@ -14,10 +14,8 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             
-            Color.black.edgesIgnoringSafeArea(.all)
-            
             Button(action: {
-                withAnimation(.spring(response: 0.5, dampingFraction: 0.3, blendDuration: 0.3)) {
+                withAnimation(.spring()) {
                     self.showToast.toggle()
                 }
             }, label: {
