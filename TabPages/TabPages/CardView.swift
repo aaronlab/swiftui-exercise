@@ -45,7 +45,6 @@ struct CardView: View {
     
     func onDrag(value: DragGesture.Value) {
         let value = value.translation.width
-        print(value)
         if (value < 0 && value > -150)
             ||
             (value > 0 && value < 150) {
