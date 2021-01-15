@@ -11,7 +11,7 @@ struct PageOne: View {
     
     @State private var showCard = false
     
-    @State private var cardTitles = ["First", "Second", "Third"]
+    @State private var cardTitles = ["Third", "Second", "First"]
     
     var body: some View {
         ZStack {
@@ -27,23 +27,20 @@ struct PageOne: View {
             
             if self.showCard {
                 
-                ForEach(self.cardTitles.indices, id: \.self) { index in
+                ForEach(self.cardTitles, id: \.self) { cardTitle in
                     
-                    CardView(title: self.cardTitles[index]) {
+                    CardView(title: cardTitle) {
                         
-                        self.cardTitles.remove(at: index)
+                        self.cardTitles.remove(at: self.cardTitles.count - 1)
                         
                         if self.cardTitles.count == 0 {
                             self.showCard.toggle()
-                            self.cardTitles = ["First", "Second", "Third"].reversed()
+                            self.cardTitles = ["Third", "Second", "First"]
                         }
                     }
                 }
             }
             
-        }
-        .onAppear {
-            self.cardTitles.reverse()
         }
     }
 }
