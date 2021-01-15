@@ -18,7 +18,6 @@ struct ContentView: View {
             PageThree()
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-        .edgesIgnoringSafeArea(.all)
     }
 }
 

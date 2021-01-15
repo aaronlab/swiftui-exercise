@@ -11,15 +11,15 @@ struct PageOne: View {
     
     @State private var showCard = false
     
+    private let cardTitles = ["First", "Second", "Third"]
+    
     var body: some View {
         ZStack {
-            Color.green.edgesIgnoringSafeArea(.all)
+            Color.green
             
             Button(action: {
                 
-                withAnimation {
-                    self.showCard.toggle()
-                }
+                self.showCard.toggle()
             }, label: {
                 Text("One")
                     .foregroundColor(.white)
@@ -27,7 +27,10 @@ struct PageOne: View {
             
             if self.showCard {
                 
-                CardView(title: "Card")
+                ForEach(self.cardTitles.reversed(), id: \.self) { card in
+                    
+                    CardView(title: card)
+                }
             }
             
         }
