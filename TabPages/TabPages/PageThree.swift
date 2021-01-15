@@ -10,7 +10,7 @@ import SwiftUI
 struct PageThree: View {
     var body: some View {
         ZStack {
-            Color.orange.edgesIgnoringSafeArea(.all)
+            Color.gray.edgesIgnoringSafeArea(.all)
             
             Text("Three")
                 .foregroundColor(.white)
