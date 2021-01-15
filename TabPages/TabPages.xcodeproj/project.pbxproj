@@ -14,6 +14,7 @@
 		A4AA605C25B1A6BC003EF7C5 /* PageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AA605B25B1A6BC003EF7C5 /* PageOne.swift */; };
 		A4AA605F25B1A6C1003EF7C5 /* PageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AA605E25B1A6C1003EF7C5 /* PageTwo.swift */; };
 		A4AA606225B1A6C5003EF7C5 /* PageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AA606125B1A6C5003EF7C5 /* PageThree.swift */; };
+		A4AA606525B1A862003EF7C5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AA606425B1A862003EF7C5 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A4AA605B25B1A6BC003EF7C5 /* PageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageOne.swift; sourceTree = "<group>"; };
 		A4AA605E25B1A6C1003EF7C5 /* PageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTwo.swift; sourceTree = "<group>"; };
 		A4AA606125B1A6C5003EF7C5 /* PageThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageThree.swift; sourceTree = "<group>"; };
+		A4AA606425B1A862003EF7C5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				A4AA604B25B1A69D003EF7C5 /* TabPagesApp.swift */,
 				A4AA604D25B1A69D003EF7C5 /* ContentView.swift */,
+				A4AA606425B1A862003EF7C5 /* CardView.swift */,
 				A4AA605B25B1A6BC003EF7C5 /* PageOne.swift */,
 				A4AA605E25B1A6C1003EF7C5 /* PageTwo.swift */,
 				A4AA606125B1A6C5003EF7C5 /* PageThree.swift */,
@@ -151,6 +154,7 @@
 				A4AA604E25B1A69D003EF7C5 /* ContentView.swift in Sources */,
 				A4AA604C25B1A69D003EF7C5 /* TabPagesApp.swift in Sources */,
 				A4AA606225B1A6C5003EF7C5 /* PageThree.swift in Sources */,
+				A4AA606525B1A862003EF7C5 /* CardView.swift in Sources */,
 				A4AA605F25B1A6C1003EF7C5 /* PageTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,12 +8,28 @@
 import SwiftUI
 
 struct PageOne: View {
+    
+    @State private var showCard = false
+    
     var body: some View {
         ZStack {
             Color.green.edgesIgnoringSafeArea(.all)
             
-            Text("One")
-                .foregroundColor(.white)
+            Button(action: {
+                
+                withAnimation {
+                    self.showCard.toggle()
+                }
+            }, label: {
+                Text("One")
+                    .foregroundColor(.white)
+            })
+            
+            if self.showCard {
+                
+                CardView(title: "Card")
+            }
+            
         }
     }
 }
