@@ -8,9 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showAlert = false
+    @State private var text = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            VStack {
+                
+                Button(action: {
+                    self.showAlert.toggle()
+                }, label: {
+                    Text("Show Alert")
+                })
+                
+                Text(self.text)
+            }
+            
+            if self.showAlert {
+                AlertView(text: self.$text, showAlert: self.$showAlert, title: "Put something", message: "Alert + TextField")
+            }
+        }
     }
 }
 
