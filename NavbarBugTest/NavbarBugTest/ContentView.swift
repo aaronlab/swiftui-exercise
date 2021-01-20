@@ -23,9 +23,19 @@ struct ContentView: View {
 }
 
 struct Child: View {
+    
+    @Environment(\.presentationMode) private var presentationMode
+    
     var body: some View {
         
         Text("Child")
+            .navigationBarTitle("Child")
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Text("Back..")
+            }))
         
     }
 }
