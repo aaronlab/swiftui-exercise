@@ -14,6 +14,7 @@ struct ContentView: View {
             VStack {
                 
                 NavigationLink("Child", destination: Child())
+                    .isDetailLink(false)
                 
                 Text("Parent")
                     .navigationBarTitle("Parent", displayMode: .inline)
@@ -37,6 +38,17 @@ struct Child: View {
                 Text("Back..")
             }))
         
+    }
+}
+
+extension UINavigationController: UIGestureRecognizerDelegate {
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+        interactivePopGestureRecognizer?.delegate = self
+    }
+
+    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return viewControllers.count > 1
     }
 }
 
