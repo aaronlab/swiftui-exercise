@@ -9,9 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            makeText("Function with return")
+            
+            makeTextWithViewBuilder("ViewBuilder Function without return")
+        }
     }
+    
+    func makeText(_ text: String) -> some View {
+        return Text(text)
+            .foregroundColor(.red)
+    }
+    
+    @ViewBuilder
+    func makeTextWithViewBuilder(_ text: String) -> some View {
+        Text(text)
+            .foregroundColor(.blue)
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
