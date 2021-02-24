@@ -14,6 +14,8 @@
 		A431001F25E68F58004EF458 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431001E25E68F58004EF458 /* APIService.swift */; };
 		A431002325E68F96004EF458 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431002225E68F96004EF458 /* APIError.swift */; };
 		A431002625E68FD1004EF458 /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431002525E68FD1004EF458 /* APISession.swift */; };
+		A431002E25E69139004EF458 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A431002D25E69139004EF458 /* .gitignore */; };
+		A431003225E6915A004EF458 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431003125E6915A004EF458 /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A431001E25E68F58004EF458 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		A431002225E68F96004EF458 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		A431002525E68FD1004EF458 /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
+		A431002D25E69139004EF458 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A431003125E6915A004EF458 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 				A431001E25E68F58004EF458 /* APIService.swift */,
 				A431002225E68F96004EF458 /* APIError.swift */,
 				A431002525E68FD1004EF458 /* APISession.swift */,
+				A431003125E6915A004EF458 /* APIKey.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 		A431FFFD25E68EDB004EF458 = {
 			isa = PBXGroup;
 			children = (
+				A431002D25E69139004EF458 /* .gitignore */,
 				A431000825E68EDC004EF458 /* NewsTest */,
 				A431000725E68EDC004EF458 /* Products */,
 			);
@@ -200,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A431001125E68EDD004EF458 /* Preview Assets.xcassets in Resources */,
+				A431002E25E69139004EF458 /* .gitignore in Resources */,
 				A431000E25E68EDD004EF458 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +222,7 @@
 				A431000C25E68EDC004EF458 /* ContentView.swift in Sources */,
 				A431002325E68F96004EF458 /* APIError.swift in Sources */,
 				A431001F25E68F58004EF458 /* APIService.swift in Sources */,
+				A431003225E6915A004EF458 /* APIKey.swift in Sources */,
 				A431000A25E68EDC004EF458 /* NewsTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
