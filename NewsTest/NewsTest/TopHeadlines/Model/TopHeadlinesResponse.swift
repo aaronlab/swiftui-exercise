@@ -7,6 +7,12 @@
 
 import Foundation
 
-struct TopHeadlinesResponse: Decodable {
+struct TopHeadlinesResponse: Decodable, APIResponse {
+    
     let status: String?
+    
+    let totalResults: Int?
+    
+    let articles: [Article]?
+    
 }
