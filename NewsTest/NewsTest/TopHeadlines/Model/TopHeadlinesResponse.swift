@@ -11,8 +11,19 @@ struct TopHeadlinesResponse: Decodable, APIResponse {
     
     let status: String?
     
+    let message: String?
+    
     let totalResults: Int?
     
     let articles: [Article]?
+    
+}
+
+extension TopHeadlinesResponse {
+    
+    var _status: APIStatus? {
+        guard let status = status else { return nil }
+        return APIStatus(rawValue: status)
+    }
     
 }

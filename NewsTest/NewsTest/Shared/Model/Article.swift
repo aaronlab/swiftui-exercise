@@ -38,3 +38,9 @@ extension Article {
     }
     
 }
+
+extension Article {
+    
+    var id: UUID { UUID() }
+    
+}

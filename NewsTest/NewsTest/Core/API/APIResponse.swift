@@ -11,4 +11,6 @@ protocol APIResponse {
     
     var status: String? { get }
     
+    var message: String? { get }
+    
 }
