@@ -12,39 +12,50 @@ struct TopHeadlinesCell: View {
     private let title: String
     private let source: String
     private let author: String
+    private let action: (() -> Void)?
     
     private var subTitle: String {
-        return "\(source) / \(author)"
+        return "\(source)\(author != "" ? " / \(author)" :  "")"
     }
     
     init(
         title: String,
         source: String,
-        author: String
+        author: String,
+        action: (() -> Void)? = nil
     ) {
         self.title = title
         self.source = source
         self.author = author
+        self.action = action
     }
     
     var body: some View {
         
-        VStack(alignment: .leading, spacing: 16) {
+        Button(action: {
+            action?()
+        }) {
             
-            Text(title)
-                .lineLimit(2)
-                .multilineTextAlignment(.leading)
-                .font(.title2)
+            VStack(alignment: .leading, spacing: 16) {
+                
+                Text(title)
+                    .lineLimit(2)
+                    .multilineTextAlignment(.leading)
+                    .font(.title2)
+                
+                HStack {
+                    
+                    Spacer(minLength: 0)
+                    
+                    Text(subTitle)
+                        .font(.subheadline)
+                    
+                } //: H
+                
+            } //: V
             
-            HStack {
-                
-                Spacer(minLength: 16)
-                
-                Text(subTitle)
-                
-            } //: H
-            
-        } //: V
+        }
+        .foregroundColor(.primary)
         .padding(16)
         .background(
             Color(UIColor.systemBackground)

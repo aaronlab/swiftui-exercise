@@ -11,6 +11,9 @@ struct TopHeadlinesView: View {
     
     @ObservedObject private var viewModel: TopHeadlinesViewModel
     
+    @State private var destination: AnyView = AnyView(EmptyView())
+    @State private var showDetail: NavigationStatus? = .ready
+    
     init() {
         self.viewModel = TopHeadlinesViewModel()
     }
@@ -22,6 +25,13 @@ struct TopHeadlinesView: View {
             GeometryReader { geo in
                 
                 ZStack {
+                    
+                    NavigationLink(
+                        destination: destination,
+                        tag: .pop,
+                        selection: $showDetail) {
+                        EmptyView()
+                    }
                     
                     ScrollView {
                         
@@ -38,10 +48,14 @@ struct TopHeadlinesView: View {
                                     title: title,
                                     source: source,
                                     author: author
-                                )
+                                ) {
+                                    popToDetail(at: index)
+                                }
                                 .frame(height: geo.size.height / 4)
                                 .onAppear {
-                                    print(article.id)
+                                    
+                                    viewModel.loadMoreIfNeeded(with: article)
+                                    
                                 }
                                 
                             }
@@ -59,6 +73,10 @@ struct TopHeadlinesView: View {
                         
                     }
                     
+                    if viewModel.showToast {
+                        AlertToast(message: viewModel.toastMessage)
+                    }
+                    
                 } //: Z
                 .frame(width: geo.size.width, height: geo.size.height)
                 
@@ -71,6 +89,14 @@ struct TopHeadlinesView: View {
         }
         .preferredColorScheme(.light)
         
+    }
+    
+    /// Pop to Detail
+    private func popToDetail(at index: Int) {
+        destination = AnyView(
+            TopHeadlinesDetailView(article: viewModel.articles[index])
+        )
+        showDetail = .pop
     }
     
 }

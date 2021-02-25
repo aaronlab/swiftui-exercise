@@ -39,8 +39,17 @@ extension Article {
     
 }
 
-extension Article {
+extension Article: Hashable {
     
-    var id: UUID { UUID() }
+    static func == (lhs: Article, rhs: Article) -> Bool {
+        return lhs.source == rhs.source &&
+            lhs.author == rhs.author &&
+            lhs.title == rhs.title &&
+            lhs.description == rhs.description &&
+            lhs.url == rhs.url &&
+            lhs.imgURL == rhs.imgURL &&
+            lhs.publishedAt == rhs.publishedAt &&
+            lhs.content == rhs.content
+    }
     
 }

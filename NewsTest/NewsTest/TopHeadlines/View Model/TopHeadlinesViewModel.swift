@@ -18,8 +18,14 @@ final class TopHeadlinesViewModel: ObservableObject, TopHeadlinesService {
     @Published var page: Int
     
     @Published private  var topHeadlinesResponse: TopHeadlinesResponse?
+    @Published var articles: [Article]
+    var totalResults: Int {
+        return topHeadlinesResponse?.totalResults ?? 0
+    }
     
     @Published var isLoading: Bool
+    
+    var toastMessage: String
     @Published var showToast: Bool
     
     init(_ apiSession: APIService = APISession()) {
@@ -30,7 +36,11 @@ final class TopHeadlinesViewModel: ObservableObject, TopHeadlinesService {
         self.pageSize = 10
         self.page = 1
         
+        self.articles = [Article]()
+        
         self.isLoading = false
+        
+        self.toastMessage = ""
         self.showToast = false
         
     }
@@ -42,54 +52,81 @@ final class TopHeadlinesViewModel: ObservableObject, TopHeadlinesService {
         self.getTopHeadlines(page: page, pageSize: pageSize)
             .sink { result in
                 
-                NetworkUtil.shared.handleNetworkResult(with: result) { _ in
+                NetworkUtil.shared.handleNetworkResult(with: result) { error in
                     self.endLoading()
+                    
+                    let message = self.getDescription(with: error)
+                    self.showToast(with: message)
                 }
                 
             } receiveValue: { response in
+                
+                self.endLoading()
                 
                 if response._status == .ok {
                     
                     self.topHeadlinesResponse = response
                     
+                    guard let articles = response.articles else { return }
+                    self.articles += articles
+                    
                 } else {
                     
-                    DispatchQueue.main.async {
-                        self.showToast = true
-                    }
+                    self.showToast(with: response.message ?? "Response Error")
                     
                 }
-                
-                self.endLoading()
                 
             }
             .store(in: &cancellables)
     }
     
+    /// Infinite Scroll
+    func loadMoreIfNeeded(with article: Article) {
+        if articles.count < totalResults && article == articles.last {
+            page += 1
+            getTopHeadlines()
+        }
+    }
+    
     /// Start Loading
-    func startLoading() {
+    private func startLoading() {
         DispatchQueue.main.async {
             self.isLoading = true
         }
     }
     
     /// End Loading
-    func endLoading() {
+    private func endLoading() {
         DispatchQueue.main.async {
             self.isLoading = false
         }
     }
     
-}
-
-extension TopHeadlinesViewModel {
-    
-    var totalResults: Int {
-        return topHeadlinesResponse?.totalResults ?? 0
+    /// Show Toast
+    private func showToast(with text: String) {
+        
+        toastMessage = text
+        
+        DispatchQueue.main.async {
+            self.showToast = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.showToast = false
+        }
+        
     }
     
-    var articles: [Article] {
-        return topHeadlinesResponse?.articles ?? [Article]()
+    /// Error Description
+    private func getDescription(with error: APIError) -> String {
+        switch error {
+        case .decodingError:
+            return "Decoding Error Occured"
+        case .unknown:
+            return "Unknown Error Occured"
+        case .httpError(let status):
+            return "Network Error Occured(\(status))"
+        }
     }
     
 }

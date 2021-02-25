@@ -14,3 +14,12 @@ struct Source: Decodable {
     let name: String?
     
 }
+
+extension Source: Hashable {
+    
+    static func == (lhs: Source, rhs: Source) -> Bool {
+        return lhs.id == rhs.id &&
+            lhs.name == rhs.name
+    }
+    
+}
