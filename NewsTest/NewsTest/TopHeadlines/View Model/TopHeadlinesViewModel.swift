@@ -22,14 +22,7 @@ final class TopHeadlinesViewModel: ObservableObject, TopHeadlinesService {
     func getTopHeadlines() {
         self.getTopHeadlines(page: 1, pageSize: 1)
             .sink { result in
-                switch result {
-                case .failure(let error):
-                    #if DEBUG
-                    print("Error: \(error)")
-                    #endif
-                case .finished:
-                    break
-                }
+                NetworkUtil.shared.handleNetworkResult(with: result)
             } receiveValue: { response in
                 print(response)
             }

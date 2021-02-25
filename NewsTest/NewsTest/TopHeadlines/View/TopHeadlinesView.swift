@@ -17,10 +17,21 @@ struct TopHeadlinesView: View {
     
     var body: some View {
         
-        Text("Hello")
-            .onAppear {
-                viewModel.getTopHeadlines()
-            }
+        NavigationView {
+            
+            ScrollView {
+                
+                LazyVStack(alignment: .leading, spacing: 16) {
+                    
+                    
+                    
+                } //: V
+                .padding(.horizontal, 16)
+                
+            } //: S
+            .navigationBarTitle("Top Headlines", displayMode: .large)
+            
+        } //: N
         
     }
     

@@ -24,6 +24,7 @@
 		A4B68D7E25E73373002B0CD0 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B68D7D25E73373002B0CD0 /* APIResponse.swift */; };
 		A4B68D8325E733EE002B0CD0 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B68D8225E733EE002B0CD0 /* Article.swift */; };
 		A4B68D8725E7342B002B0CD0 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B68D8625E7342B002B0CD0 /* Source.swift */; };
+		A4B68D8B25E734F1002B0CD0 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B68D8A25E734F1002B0CD0 /* NetworkUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		A4B68D7D25E73373002B0CD0 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		A4B68D8225E733EE002B0CD0 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		A4B68D8625E7342B002B0CD0 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		A4B68D8A25E734F1002B0CD0 /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		A431001C25E68F2C004EF458 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A4B68D8925E734DF002B0CD0 /* Utils */,
 				A431001D25E68F30004EF458 /* API */,
 			);
 			path = Core;
@@ -188,6 +191,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A4B68D8925E734DF002B0CD0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A4B68D8A25E734F1002B0CD0 /* NetworkUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,6 +274,7 @@
 				A431002625E68FD1004EF458 /* APISession.swift in Sources */,
 				A431003E25E69785004EF458 /* TopHeadlinesService.swift in Sources */,
 				A431003525E6919E004EF458 /* TopHeadlinesEndpoint.swift in Sources */,
+				A4B68D8B25E734F1002B0CD0 /* NetworkUtil.swift in Sources */,
 				A431002325E68F96004EF458 /* APIError.swift in Sources */,
 				A4B68D7E25E73373002B0CD0 /* APIResponse.swift in Sources */,
 				A431004125E69827004EF458 /* TopHeadlinesView.swift in Sources */,
