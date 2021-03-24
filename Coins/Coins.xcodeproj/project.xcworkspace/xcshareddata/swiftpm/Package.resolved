@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RespondableTextField",
+        "repositoryURL": "https://github.com/aaronlab/respondabletextfield",
+        "state": {
+          "branch": null,
+          "revision": "cbf0cba378d4a76e79f5576116ad5eb4d9285ec9",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
